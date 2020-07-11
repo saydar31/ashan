@@ -26,4 +26,16 @@ public class Employer extends UserModel {
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "employer")
     private Set<Student> students;
+
+    public static Employer castToModel(EmployerDto employer){
+        return Employer.builder()
+                .companyName(employer.getCompanyName())
+                .mail(employer.getMail())
+                .id(employer.getId())
+                .role(employer.getRole())
+                .state(employer.getState())
+                .hashPassword(employer.getPassword())
+                .build();
+    }
+
 }

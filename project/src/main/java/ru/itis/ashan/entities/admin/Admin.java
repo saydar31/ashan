@@ -26,4 +26,15 @@ public class Admin extends UserModel {
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "institute_id", nullable = false, unique = true)
     private Institute institute;
+
+    public static Admin castToModel(AdminDto adminDto){
+        return Admin.builder()
+                .institute(adminDto.getInstitute())
+                .id(adminDto.getId())
+                .mail(adminDto.getMail())
+                .role(adminDto.getRole())
+                .state(adminDto.getState())
+                .hashPassword(adminDto.getPassword())
+                .build();
+    }
 }

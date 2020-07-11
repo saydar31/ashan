@@ -27,4 +27,18 @@ public class UserModel {
     @Enumerated(value = EnumType.STRING)
     @Column(nullable = false)
     private Role role;
+
+    @Enumerated(value = EnumType.STRING)
+    @Column(nullable = false)
+    private State state;
+
+    public static UserModel castToModel(UserDto userDto){
+        return UserModel.builder()
+                .hashPassword(userDto.getPassword())
+                .id(userDto.getId())
+                .mail(userDto.getMail())
+                .role(userDto.getRole())
+                .state(userDto.getState())
+                .build();
+    }
 }

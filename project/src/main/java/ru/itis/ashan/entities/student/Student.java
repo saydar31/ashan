@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 import ru.itis.ashan.entities.employer.Employer;
 import ru.itis.ashan.entities.teacher.Teacher;
+import ru.itis.ashan.entities.user.UserDto;
 import ru.itis.ashan.entities.user.UserModel;
 
 import javax.persistence.*;
@@ -44,4 +45,24 @@ public class Student extends UserModel {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "employer_id")
     private Employer employer;
+
+    @Enumerated(value = EnumType.STRING)
+    @Column(nullable = false)
+    private CompetenceState competenceState;
+
+    public static Student castToModel(StudentDto studentDto){
+        return Student.builder()
+                .surname(studentDto.getSurname())
+                .name(studentDto.getName())
+                .patronymic(studentDto.getPatronymic())
+                .course(studentDto.getCourse())
+                .groupNumber(studentDto.getGroupNumber())
+                .competenceState(studentDto.getCompetenceState())
+                .mail(studentDto.getMail())
+                .id(studentDto.getId())
+                .state(studentDto.getState())
+                .role(studentDto.getRole())
+                .hashPassword(studentDto.getPassword())
+                .build();
+    }
 }

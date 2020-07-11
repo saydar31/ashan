@@ -1,0 +1,66 @@
+package ru.itis.ashan.entities.teacher;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.SuperBuilder;
+import ru.itis.ashan.entities.institute.Institute;
+import ru.itis.ashan.entities.student.Student;
+import ru.itis.ashan.entities.student.StudentDto;
+import ru.itis.ashan.entities.user.UserDto;
+
+import javax.persistence.*;
+import java.util.Set;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@SuperBuilder
+public class TeacherDto extends UserDto {
+
+    private String surname;
+
+    private String name;
+
+    private String patronymic;
+
+    private Institute institute;
+
+    private Set<StudentDto> studentDtoSet;
+
+    public static TeacherDto castToDto(Teacher teacher){
+        TeacherDto teacherDto =  TeacherDto.builder()
+                .surname(teacher.getSurname())
+                .name(teacher.getName())
+                .patronymic(teacher.getPatronymic())
+                .institute(teacher.getInstitute())
+                .mail(teacher.getMail())
+                .id(teacher.getId())
+                .role(teacher.getRole())
+                .state(teacher.getState())
+                .build();
+
+        if(teacher.getStudents() != null) {
+            for (Student student : teacher.getStudents()) {
+                teacherDto.studentDtoSet.add(StudentDto.getDto(student));
+            }
+        }
+        return teacherDto;
+    }
+
+    //не юзать, используется для других классов
+    public static TeacherDto getDto(Teacher teacher){
+        return TeacherDto.builder()
+                .surname(teacher.getSurname())
+                .name(teacher.getName())
+                .patronymic(teacher.getPatronymic())
+                .institute(teacher.getInstitute())
+                .mail(teacher.getMail())
+                .id(teacher.getId())
+                .role(teacher.getRole())
+                .state(teacher.getState())
+                .build();
+    }
+}

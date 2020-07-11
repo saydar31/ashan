@@ -39,4 +39,18 @@ public class Teacher extends UserModel {
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "teacher")
     private Set<Student> students;
+
+    public static Teacher castToModel(TeacherDto teacherDto){
+        return Teacher.builder()
+                .surname(teacherDto.getSurname())
+                .name(teacherDto.getName())
+                .patronymic(teacherDto.getPatronymic())
+                .institute(teacherDto.getInstitute())
+                .mail(teacherDto.getMail())
+                .hashPassword(teacherDto.getPassword())
+                .role(teacherDto.getRole())
+                .state(teacherDto.getState())
+                .id(teacherDto.getId())
+                .build();
+    }
 }
