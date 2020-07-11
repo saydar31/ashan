@@ -33,9 +33,8 @@ public class Teacher extends UserModel {
     @Column(nullable = false)
     private String patronymic;
 
-    @Column(nullable = false)
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "institute_id")
+    @JoinColumn(name = "institute_id", nullable = false)
     private Institute institute;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "teacher")

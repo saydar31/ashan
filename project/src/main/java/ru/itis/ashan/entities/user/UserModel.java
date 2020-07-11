@@ -24,6 +24,7 @@ public class UserModel {
     @Column(nullable = false)
     private String hashPassword;
 
+    @Enumerated(value = EnumType.STRING)
     @Column(nullable = false)
     private Role role;
 }

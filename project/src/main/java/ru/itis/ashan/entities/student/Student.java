@@ -35,7 +35,7 @@ public class Student extends UserModel {
     private Integer course;
 
     @Column(nullable = false)
-    private Integer group;
+    private Integer groupNumber;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "teacher_id")
