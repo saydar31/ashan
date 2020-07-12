@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
-import ru.itis.ashan.entities.institute.Institute;
 import ru.itis.ashan.entities.user.UserModel;
 
 import javax.persistence.*;
@@ -16,20 +15,13 @@ import javax.persistence.*;
  */
 @Setter
 @Getter
-@AllArgsConstructor
-@NoArgsConstructor
 @SuperBuilder
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Admin extends UserModel {
 
-    @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "institute_id", nullable = false, unique = true)
-    private Institute institute;
-
     public static Admin castToModel(AdminDto adminDto){
         return Admin.builder()
-                .institute(adminDto.getInstitute())
                 .id(adminDto.getId())
                 .mail(adminDto.getMail())
                 .role(adminDto.getRole())

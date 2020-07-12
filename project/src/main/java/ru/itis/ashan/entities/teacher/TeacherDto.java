@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
-import ru.itis.ashan.entities.institute.Institute;
 import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.user.UserDto;
@@ -26,8 +25,6 @@ public class TeacherDto extends UserDto {
 
     private String patronymic;
 
-    private Institute institute;
-
     private Set<StudentDto> studentDtoSet;
 
     public static TeacherDto castToDto(Teacher teacher){
@@ -35,7 +32,6 @@ public class TeacherDto extends UserDto {
                 .surname(teacher.getSurname())
                 .name(teacher.getName())
                 .patronymic(teacher.getPatronymic())
-                .institute(teacher.getInstitute())
                 .mail(teacher.getMail())
                 .id(teacher.getId())
                 .role(teacher.getRole())
@@ -56,7 +52,6 @@ public class TeacherDto extends UserDto {
                 .surname(teacher.getSurname())
                 .name(teacher.getName())
                 .patronymic(teacher.getPatronymic())
-                .institute(teacher.getInstitute())
                 .mail(teacher.getMail())
                 .id(teacher.getId())
                 .role(teacher.getRole())
