@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.itis.ashan.entities.student.Student;
+import ru.itis.ashan.security.details.UserDetailsImpl;
 import ru.itis.ashan.services.StudentService;
 
 @Controller
@@ -23,15 +24,15 @@ public class StudentProfileController {
     public String getProfilePage(Model model) {
         UserDetailsImpl userDetails = (UserDetailsImpl) SecurityContextHolder.getContext()
                 .getAuthentication().getPrincipal();
-        student = userDetails.getUser();
+        student = (Student) userDetails.getUser();
         model.addAttribute("student", student);
-        return "profile_student";
+        return "student_profile";
     }
 
     //редактирование профиля
     @PostMapping("/profile/file")
     public String editProfile(Model model) {
         model.addAttribute("user", student);
-        return "profile_student";
+        return "student_profile";
     }
 }

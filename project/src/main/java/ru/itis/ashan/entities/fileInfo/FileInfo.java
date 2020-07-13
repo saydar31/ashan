@@ -5,7 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import ru.itis.ashan.entities.user.UserModel;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 
