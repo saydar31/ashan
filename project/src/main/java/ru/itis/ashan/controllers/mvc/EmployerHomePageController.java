@@ -17,7 +17,7 @@ public class EmployerHomePageController {
     public ModelAndView getEmployerHomePage(@AuthenticationPrincipal UserDetailsImpl userDetails){
         UserModel userModel = userDetails.getUser();
         Employer employer = (Employer) userModel;
-        ModelAndView modelAndView = new ModelAndView("employer_page");
+        ModelAndView modelAndView = new ModelAndView("employer_profile");
         modelAndView.addObject("employer", EmployerDto.castToDto(employer));
         return modelAndView;
     }
