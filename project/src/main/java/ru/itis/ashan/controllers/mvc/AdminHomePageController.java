@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import ru.itis.ashan.entities.admin.Admin;
-import ru.itis.ashan.entities.employer.Employer;
 import ru.itis.ashan.security.details.UserDetailsImpl;
 import ru.itis.ashan.services.AdminService;
 
@@ -19,7 +18,7 @@ public class AdminHomePageController {
 
     @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/profile_admin")
-    public String getPage(Authentication authentication, Model model){
+    public String getPage(Authentication authentication, Model model) {
         UserDetailsImpl userDetail = (UserDetailsImpl) authentication.getPrincipal();
         Admin admin = (Admin) userDetail.getUser();
         model.addAttribute("admin", admin);

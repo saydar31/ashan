@@ -1,20 +1,14 @@
 package ru.itis.ashan.entities.admin;
 
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 import ru.itis.ashan.entities.user.UserModel;
-
 import javax.persistence.*;
 
 /*
  Аккаунт институт, содержит уникальный институт
  */
-@Setter
-@Getter
+@Data
 @SuperBuilder
 @AllArgsConstructor
 @Entity

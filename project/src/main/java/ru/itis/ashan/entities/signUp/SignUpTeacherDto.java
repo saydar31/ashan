@@ -8,7 +8,6 @@ public class SignUpTeacherDto {
     private String name;
     private String surname;
     private String patronymic;
-
     private String mail;
     private String password;
 }

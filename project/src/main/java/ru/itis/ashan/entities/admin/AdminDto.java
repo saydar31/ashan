@@ -4,8 +4,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 import ru.itis.ashan.entities.user.UserDto;
 
-@Getter
-@Setter
+@Data
 @SuperBuilder
 public class AdminDto extends UserDto {
 

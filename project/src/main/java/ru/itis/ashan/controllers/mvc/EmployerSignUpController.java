@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.itis.ashan.entities.signUp.SignUpEmployerDto;
-import ru.itis.ashan.entities.signUp.SignUpStudentDto;
 import ru.itis.ashan.services.SignUpService;
 
 @Controller
