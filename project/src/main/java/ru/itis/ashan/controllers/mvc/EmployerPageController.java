@@ -1,4 +1,4 @@
-package ru.itis.ashan.controller.mvc;
+package ru.itis.ashan.controllers.mvc;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,7 +13,7 @@ public class EmployerPageController {
     private EmployerService employerService;
     @GetMapping("/employer/{id:\\d+}")
     public ModelAndView getEmployeePage(@PathVariable Long id){
-        ModelAndView modelAndView = new ModelAndView("employer_page");
+        ModelAndView modelAndView = new ModelAndView("employer_profile");
         modelAndView.addObject("employer", employerService.getById(id));
         return modelAndView;
     }

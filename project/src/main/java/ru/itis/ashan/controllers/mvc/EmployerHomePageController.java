@@ -1,4 +1,4 @@
-package ru.itis.ashan.controller.mvc;
+package ru.itis.ashan.controllers.mvc;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -15,7 +15,7 @@ public class EmployerHomePageController {
     @GetMapping("/employer/home")
     @PreAuthorize("hasAuthority('EMPLOYER')")
     public ModelAndView getEmployerHomePage(@AuthenticationPrincipal UserDetailsImpl userDetails){
-        UserModel userModel = userDetails.getUserModel();
+        UserModel userModel = userDetails.getUser();
         Employer employer = (Employer) userModel;
         ModelAndView modelAndView = new ModelAndView("employer_page");
         modelAndView.addObject("employer", EmployerDto.castToDto(employer));
