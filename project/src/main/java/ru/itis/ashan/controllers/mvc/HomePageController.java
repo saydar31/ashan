@@ -1,4 +1,4 @@
-package ru.itis.ashan.controllers;
+package ru.itis.ashan.controllers.mvc;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
@@ -10,26 +10,26 @@ import ru.itis.ashan.entities.user.UserModel;
 import ru.itis.ashan.security.details.UserDetailsImpl;
 
 @Controller
-public class RootController {
+public class HomePageController {
 
     @PreAuthorize("isAuthenticated()")
-    @GetMapping("/")
-    public String getRootPage(Authentication authentication) {
+    @GetMapping("/home")
+    public String redirectToMyProfile(Authentication authentication) {
         if (authentication != null) {
             UserDetailsImpl userDetail = (UserDetailsImpl) authentication.getPrincipal();
             UserModel userModel = userDetail.getUser();
             Role role = userModel.getRole();
 
             if (role.equals(Role.STUDENT)) {
-                return "redirect:/profile_student";
+                return "redirect:/student/home";
             } else if (role.equals(Role.TEACHER)) {
-                return "redirect:/profile_teacher";
+                return "redirect:/teacher/home";
             }else if (role.equals(Role.EMPLOYER)) {
-                return "redirect:/profile_employer";
+                return "redirect:/employer/home";
             }else if (role.equals(Role.ADMIN)) {
-                return "redirect:/profile_admin";
+                return "redirect:/admin/home";
             } else {
-                throw new IllegalArgumentException("this role is not exist");
+                throw new IllegalArgumentException("Role '" + role.toString() + "'is not exist");
             }
         } else {
             return "redirect:/signIn";

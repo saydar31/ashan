@@ -1,0 +1,15 @@
+POST http://localhost:8080/api/signIn
+Content-Type: application/json
+
+{
+  "mail": "2",
+  "password": "2"
+}
+
+###
+
+POST http://localhost:8080/api/test
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwibWFpbCI6IjIiLCJyb2xlIjoiVEVBQ0hFUiIsInN0YXRlIjoiTk9UX0NPTkZJUk1FRCJ9.J53RLdLnkIeHzkLRtWCRaguhyZKS_wTW4L_iUjvjw5U
+
+

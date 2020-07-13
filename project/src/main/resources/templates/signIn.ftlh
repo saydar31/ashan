@@ -13,6 +13,9 @@
         <input name="mail" placeholder="Mail">
         <input type="password" name="password" placeholder="Password">
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+        <label>
+            <input type="checkbox" name="remember-me">Запомни меня
+        </label>
         <input type="submit" value="SignIn">
     </form>
 </div>
