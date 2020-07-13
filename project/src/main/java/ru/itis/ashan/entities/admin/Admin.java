@@ -16,6 +16,7 @@ import javax.persistence.*;
 @Setter
 @Getter
 @SuperBuilder
+@AllArgsConstructor
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Admin extends UserModel {

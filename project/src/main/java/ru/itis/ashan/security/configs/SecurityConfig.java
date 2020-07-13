@@ -28,7 +28,7 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @Configuration
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig{
 
     @Order(2)
     @Configuration
@@ -67,6 +67,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .invalidateHttpSession(true);
 
         }
+
+
 
         @Autowired
         private DataSource dataSource;
@@ -110,5 +112,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             }
 
         }
-
 }
