@@ -2,14 +2,11 @@ package ru.itis.ashan.entities.student;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-import ru.itis.ashan.entities.employer.Employer;
 import ru.itis.ashan.entities.employer.EmployerDto;
-import ru.itis.ashan.entities.teacher.Teacher;
 import ru.itis.ashan.entities.teacher.TeacherDto;
 import ru.itis.ashan.entities.user.UserDto;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder

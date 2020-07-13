@@ -28,7 +28,11 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @Configuration
+<<<<<<< HEAD
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+=======
+public class SecurityConfig{
+>>>>>>> 678de59d103cce8a7a0067fd535e78768ea85834
 
     @Order(2)
     @Configuration
@@ -68,6 +72,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 678de59d103cce8a7a0067fd535e78768ea85834
         @Autowired
         private DataSource dataSource;
 
@@ -110,5 +119,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             }
 
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 678de59d103cce8a7a0067fd535e78768ea85834
 }

@@ -4,7 +4,10 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import ru.itis.ashan.entities.user.UserModel;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 678de59d103cce8a7a0067fd535e78768ea85834
 import java.util.Collection;
 import java.util.Collections;
 

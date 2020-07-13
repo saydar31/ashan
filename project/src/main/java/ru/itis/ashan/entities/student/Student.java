@@ -1,20 +1,17 @@
 package ru.itis.ashan.entities.student;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 import ru.itis.ashan.entities.employer.Employer;
+import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.entities.teacher.Teacher;
 import ru.itis.ashan.entities.user.UserDto;
 import ru.itis.ashan.entities.user.UserModel;
 
 import javax.persistence.*;
 
-@Setter
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
@@ -45,6 +42,9 @@ public class Student extends UserModel {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "employer_id")
     private Employer employer;
+
+    @OneToOne
+    private FileInfo mainPhoto;
 
     @Enumerated(value = EnumType.STRING)
     @Column(nullable = false)

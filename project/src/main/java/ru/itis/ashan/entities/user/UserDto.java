@@ -3,10 +3,7 @@ package ru.itis.ashan.entities.user;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-import javax.persistence.*;
-
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder

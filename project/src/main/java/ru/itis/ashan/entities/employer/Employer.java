@@ -1,10 +1,7 @@
 package ru.itis.ashan.entities.employer;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.user.UserModel;
@@ -12,8 +9,7 @@ import ru.itis.ashan.entities.user.UserModel;
 import javax.persistence.*;
 import java.util.Set;
 
-@Setter
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
