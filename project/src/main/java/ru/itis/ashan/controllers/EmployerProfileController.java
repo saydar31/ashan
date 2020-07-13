@@ -6,7 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import ru.itis.ashan.entities.employer.Employer;
-import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.security.details.UserDetailsImpl;
 
 @Controller

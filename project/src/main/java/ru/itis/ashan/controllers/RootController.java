@@ -21,7 +21,7 @@ public class RootController {
             Role role = userModel.getRole();
 
             if (role.equals(Role.STUDENT)) {
-                return "redirect:/profile_student";
+                return "redirect:/student/home";
             } else if (role.equals(Role.TEACHER)) {
                 return "redirect:/profile_teacher";
             }else if (role.equals(Role.EMPLOYER)) {

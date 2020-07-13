@@ -10,8 +10,7 @@ import javax.persistence.*;
 @SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+@Data
 public class UserModel {
 
     @Id

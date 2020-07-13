@@ -11,9 +11,8 @@
 <div>
     <form action="/signUp_teacher" method="post">
         <input name="name" placeholder="Имя">
-        <input name="surname" placeholder="Фамилие">
+        <input name="surname" placeholder="Фамилия">
         <input name="patronymic" placeholder="Отчество">
-
         <input name="mail" placeholder="Email">
         <input type="password" name="password" placeholder="Пароль">
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">

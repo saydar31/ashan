@@ -10,8 +10,7 @@ import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import java.util.Set;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
