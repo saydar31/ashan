@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SignIn</title>
+</head>
+<body>
+<div>
+    <form action="/signIn" method="post">
+        <input name="mail" placeholder="Mail">
+        <input type="password" name="password" placeholder="Password">
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+        <label>
+            <input type="checkbox" name="remember-me">Запомни меня
+        </label>
+        <input type="submit" value="SignIn">
+    </form>
+</div>
+
+</body>
+</html>

@@ -4,6 +4,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Inheritance(strategy = InheritanceType.JOINED)
 @Entity
@@ -12,7 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Getter
 @Setter
-public class UserModel {
+public class UserModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,6 +32,10 @@ public class UserModel {
     @Enumerated(value = EnumType.STRING)
     @Column(nullable = false)
     private State state;
+
+    //хранит токен для rest запросов
+    @Transient
+    private String token;
 
     public static UserModel castToModel(UserDto userDto){
         return UserModel.builder()

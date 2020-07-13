@@ -1,40 +1,42 @@
-package ru.itis.ashan.security.details;
+package ru.itis.ashan.security.jwt.details;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import ru.itis.ashan.entities.user.UserModel;
 
 import java.util.Collection;
 import java.util.Collections;
 
-public class UserDetailsImpl implements UserDetails {
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Builder
+public class UserDetailsJwtImpl implements UserDetails {
 
-    private UserModel user;
+    private Long userId;
+    private String role;
+    private String mail;
+    private String state;
 
-    public UserDetailsImpl(UserModel user) {
-        this.user = user;
-    }
-
-    public UserModel getUser() {
-        return user;
-    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        String authority = user.getRole().toString();
-        SimpleGrantedAuthority simpleGrantedAuthority = new SimpleGrantedAuthority(authority);
-        return Collections.singleton(simpleGrantedAuthority);
+        SimpleGrantedAuthority authority = new SimpleGrantedAuthority(role);
+        return Collections.singletonList(authority);
     }
 
     @Override
     public String getPassword() {
-        return user.getHashPassword();
+        return null;
     }
 
     @Override
     public String getUsername() {
-        return user.getMail();
+        return this.mail;
     }
 
     @Override
@@ -55,5 +57,21 @@ public class UserDetailsImpl implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public String getState() {
+        return state;
     }
 }
