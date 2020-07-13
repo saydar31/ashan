@@ -1,4 +1,4 @@
-package ru.itis.ashan.controllers;
+package ru.itis.ashan.controllers.mvc;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
