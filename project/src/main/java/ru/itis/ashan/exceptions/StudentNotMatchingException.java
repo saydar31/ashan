@@ -1,4 +1,4 @@
-package ru.itis.ashan.services;
+package ru.itis.ashan.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

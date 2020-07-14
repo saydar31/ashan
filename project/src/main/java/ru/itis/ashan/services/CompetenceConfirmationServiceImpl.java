@@ -6,6 +6,8 @@ import org.springframework.transaction.annotation.Transactional;
 import ru.itis.ashan.entities.student.CompetenceState;
 import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.teacher.Teacher;
+import ru.itis.ashan.exceptions.StudentNotMatchingException;
+import ru.itis.ashan.exceptions.UserNotFoundedException;
 import ru.itis.ashan.repositories.StudentRepository;
 
 import java.util.Optional;
