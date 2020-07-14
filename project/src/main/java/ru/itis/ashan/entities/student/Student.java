@@ -49,6 +49,8 @@ public class Student extends UserModel {
     @Enumerated(value = EnumType.STRING)
     @Column(nullable = false)
     private CompetenceState competenceState;
+    @Column(length = 500)
+    private String competence;
 
     public static Student castToModel(StudentDto studentDto){
         return Student.builder()

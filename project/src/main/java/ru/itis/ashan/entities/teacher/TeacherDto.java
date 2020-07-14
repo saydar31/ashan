@@ -10,6 +10,7 @@ import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.user.UserDto;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @Getter
@@ -37,8 +38,8 @@ public class TeacherDto extends UserDto {
                 .role(teacher.getRole())
                 .state(teacher.getState())
                 .build();
-
         if(teacher.getStudents() != null) {
+            teacherDto.studentDtoSet = new HashSet<>();
             for (Student student : teacher.getStudents()) {
                 teacherDto.studentDtoSet.add(StudentDto.getDto(student));
             }
