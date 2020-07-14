@@ -1,5 +1,5 @@
 package ru.itis.ashan.entities.student;
 
 public enum CompetenceState {
-    CONFIRMED, NOT_CONFIRMED
+    CONFIRMED, NOT_CONFIRMED, REFUSED
 }

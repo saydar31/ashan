@@ -15,7 +15,7 @@ public class StudentPageController {
     @Autowired
     private StudentService studentService;
 
-    @GetMapping("/students/{id}")
+    @GetMapping("/student/{id}")
     @PreAuthorize("permitAll()")
     private String getStudentPage(@PathVariable Long id, Model model) {
         Student student = studentService.getStudentById(id);

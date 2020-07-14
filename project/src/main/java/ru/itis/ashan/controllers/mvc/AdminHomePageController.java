@@ -17,7 +17,7 @@ public class AdminHomePageController {
     private AdminService adminService;
 
     @PreAuthorize("hasAuthority('ADMIN')")
-    @GetMapping("/profile_admin")
+    @GetMapping("/admin/home")
     public String getPage(Authentication authentication, Model model) {
         UserDetailsImpl userDetail = (UserDetailsImpl) authentication.getPrincipal();
         Admin admin = (Admin) userDetail.getUser();

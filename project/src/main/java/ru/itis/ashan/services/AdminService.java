@@ -19,4 +19,7 @@ public interface AdminService {
 
     //подтвердить пользователя
     boolean confirmUser(UserDto userDto);
+
+    //отказать пользователю
+    boolean refuseUser(UserDto userDto);
 }

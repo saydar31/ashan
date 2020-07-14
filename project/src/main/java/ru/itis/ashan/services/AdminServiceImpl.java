@@ -85,4 +85,19 @@ public class AdminServiceImpl implements AdminService{
         }
         return false;
     }
+
+    @Override
+    public boolean refuseUser(UserDto userDto) {
+        UserModel userModel = UserModel.castToModel(userDto);
+        Optional<UserModel> optionalUserModel = userRepository.findById(userDto.getId());
+
+        if(optionalUserModel.isPresent()){
+            if(optionalUserModel.get().getState().equals(State.NOT_CONFIRMED)) {
+                userRepository.refuseUser(userModel.getId());
+                userDto.setState(State.REFUSED);
+                return true;
+            }
+        }
+        return false;
+    }
 }

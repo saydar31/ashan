@@ -1,5 +1,5 @@
 package ru.itis.ashan.entities.user;
 
 public enum  State {
-    CONFIRMED, NOT_CONFIRMED
+    CONFIRMED, NOT_CONFIRMED, REFUSED
 }
