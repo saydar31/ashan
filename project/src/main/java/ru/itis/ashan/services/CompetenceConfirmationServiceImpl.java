@@ -7,7 +7,7 @@ import ru.itis.ashan.entities.student.CompetenceState;
 import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.teacher.Teacher;
 import ru.itis.ashan.exceptions.StudentNotMatchingException;
-import ru.itis.ashan.exceptions.UserNotFoundedException;
+import ru.itis.ashan.exceptions.UserNotFoundException;
 import ru.itis.ashan.repositories.StudentRepository;
 
 import java.util.Optional;
@@ -39,7 +39,7 @@ public class CompetenceConfirmationServiceImpl implements CompetenceConfirmation
                 throw new StudentNotMatchingException();
             }
         } else {
-            throw new UserNotFoundedException();
+            throw new UserNotFoundException();
         }
     }
 }
