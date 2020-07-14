@@ -34,10 +34,10 @@ public class CompetenceConfirmationServiceImpl implements CompetenceConfirmation
             if (student.getTeacher().getId().equals(teacher.getId())) {
                 student.setCompetenceState(competenceState);
             } else {
-                throw new IllegalArgumentException();
+                throw new StudentNotMatchingException();
             }
         } else {
-            throw new IllegalArgumentException();
+            throw new UserNotFoundedException();
         }
     }
 }

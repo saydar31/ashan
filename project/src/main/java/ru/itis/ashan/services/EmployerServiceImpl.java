@@ -18,7 +18,7 @@ public class EmployerServiceImpl implements EmployerService {
         if (employerOptional.isPresent()){
             return EmployerDto.castToDto(employerOptional.get());
         } else {
-            throw new IllegalArgumentException();
+            throw new UserNotFoundedException();
         }
     }
 }
