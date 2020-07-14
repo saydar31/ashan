@@ -151,7 +151,12 @@ function confirmUser(token, id) {
         dataType: 'json',
     })
         .done(function (response) {
-            removeButtons(id);
+            if (response.status == 'success') {
+                removeButtons(id);
+            }else {
+                alert(response.description);
+                removeButtons(id);
+            }
         })
         .fail(function () {
             alert('Error')
@@ -175,7 +180,12 @@ function refuseUser(token, id) {
         dataType: 'json',
     })
         .done(function (response) {
-            removeButtons(id);
+            if (response.status == 'success') {
+                removeButtons(id);
+            }else {
+                alert(response.description);
+                removeButtons(id);
+            }
         })
         .fail(function () {
             alert('Error')

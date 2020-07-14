@@ -7,6 +7,6 @@ import lombok.Data;
 @AllArgsConstructor
 public class AdminResponseDto {
 
-    private String state;
+    private String status;
     private String description;
 }
