@@ -20,11 +20,14 @@ public class EmployerDto extends UserDto {
 
     private Set<StudentDto> studentDtoSet;
 
+    private String phoneNumber;
+
     //не юзать, использется в других классах
     public static EmployerDto getDto(Employer employer) {
         return EmployerDto.builder()
                 .companyName(employer.getCompanyName())
                 .id(employer.getId())
+                .phoneNumber(employer.getPhoneNumber())
                 .mail(employer.getMail())
                 .role(employer.getRole())
                 .state(employer.getState())
@@ -36,6 +39,7 @@ public class EmployerDto extends UserDto {
         EmployerDto employerDto = EmployerDto.builder()
                 .companyName(employer.getCompanyName())
                 .id(employer.getId())
+                .phoneNumber(employer.getPhoneNumber())
                 .mail(employer.getMail())
                 .role(employer.getRole())
                 .state(employer.getState())

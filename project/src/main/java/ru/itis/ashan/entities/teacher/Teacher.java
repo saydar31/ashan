@@ -21,7 +21,6 @@ import java.util.Set;
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Teacher extends UserModel {
 
-
     @Column(nullable = false)
     private String surname;
 

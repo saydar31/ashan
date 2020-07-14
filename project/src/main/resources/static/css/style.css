@@ -1,0 +1,28 @@
+body{
+    background: #C9DDFF; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #dcb3ff, #c9ddff);
+    background: -moz-linear-gradient(right,  #dcb3ff, #C9DDFF);
+    background: -o-linear-gradient(right, #dcb3ff, #C9DDFF);
+    background: linear-gradient(to left,  #dcb3ff, #C9DDFF);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #C9DDFF;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.btn, label{
+    font-size: 15px;
+    margin-bottom: 0.0rem;
+}
+

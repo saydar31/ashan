@@ -20,6 +20,9 @@ public class Employer extends UserModel {
     @Column(nullable = false)
     private String companyName;
 
+    @Column(nullable = false)
+    private String phoneNumber;
+
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "employer")
     private Set<Student> students;
 
@@ -28,6 +31,7 @@ public class Employer extends UserModel {
                 .companyName(employer.getCompanyName())
                 .mail(employer.getMail())
                 .id(employer.getId())
+                .phoneNumber(employer.getPhoneNumber())
                 .role(employer.getRole())
                 .state(employer.getState())
                 .hashPassword(employer.getPassword())

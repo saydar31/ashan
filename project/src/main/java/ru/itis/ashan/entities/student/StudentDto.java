@@ -6,6 +6,10 @@ import ru.itis.ashan.entities.employer.EmployerDto;
 import ru.itis.ashan.entities.teacher.TeacherDto;
 import ru.itis.ashan.entities.user.UserDto;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -67,5 +71,10 @@ public class StudentDto extends UserDto {
                 .state(student.getState())
                 .role(student.getRole())
                 .build();
+    }
+
+    public static List<StudentDto> from(List<Student> students) {
+        return students.stream().map(StudentDto::castToDto).collect(Collectors.toList());
+
     }
 }
