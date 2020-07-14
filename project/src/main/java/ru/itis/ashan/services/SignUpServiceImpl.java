@@ -73,6 +73,7 @@ public class SignUpServiceImpl implements SignUpService{
                 .companyName(form.getCompanyName())
                 .role(Role.EMPLOYER)
                 .state(State.NOT_CONFIRMED)
+                .phoneNumber(form.getPhoneNumber())
                 .build();
 
         employerRepository.save(employer);

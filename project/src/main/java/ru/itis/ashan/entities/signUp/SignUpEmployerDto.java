@@ -8,4 +8,5 @@ public class SignUpEmployerDto {
     private String companyName;
     private String mail;
     private String password;
+    private String phoneNumber;
 }
