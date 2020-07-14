@@ -1,9 +1,6 @@
 package ru.itis.ashan.entities.teacher;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.user.UserModel;
@@ -19,6 +16,7 @@ import java.util.Set;
 @SuperBuilder
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
+@ToString(exclude = "students")
 public class Teacher extends UserModel {
 
     @Column(nullable = false)

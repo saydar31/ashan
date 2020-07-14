@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import ru.itis.ashan.entities.employer.Employer;
 import ru.itis.ashan.entities.employer.EmployerDto;
+import ru.itis.ashan.exceptions.UserNotFoundException;
 import ru.itis.ashan.repositories.EmployerRepository;
 
 import java.util.Optional;
@@ -18,7 +19,7 @@ public class EmployerServiceImpl implements EmployerService {
         if (employerOptional.isPresent()){
             return EmployerDto.castToDto(employerOptional.get());
         } else {
-            throw new IllegalArgumentException();
+            throw new UserNotFoundException();
         }
     }
 }
