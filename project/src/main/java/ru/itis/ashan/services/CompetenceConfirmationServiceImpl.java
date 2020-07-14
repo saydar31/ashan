@@ -9,6 +9,7 @@ import ru.itis.ashan.entities.teacher.Teacher;
 import ru.itis.ashan.exceptions.StudentNotMatchingException;
 import ru.itis.ashan.exceptions.UserNotFoundException;
 import ru.itis.ashan.repositories.StudentRepository;
+import ru.itis.ashan.repositories.TeacherRepository;
 
 import java.util.Optional;
 
@@ -16,6 +17,9 @@ import java.util.Optional;
 public class CompetenceConfirmationServiceImpl implements CompetenceConfirmationService {
     @Autowired
     private StudentRepository studentRepository;
+
+    @Autowired
+    private TeacherRepository teacherRepository;
 
     @Override
     @Transactional
@@ -35,6 +39,10 @@ public class CompetenceConfirmationServiceImpl implements CompetenceConfirmation
             Student student = studentOptional.get();
             if (student.getTeacher().getId().equals(teacher.getId())) {
                 student.setCompetenceState(competenceState);
+                if (competenceState.equals(CompetenceState.CONFIRMED)){
+                    teacher.getStudents().add(student);
+                    teacherRepository.save(teacher);
+                }
             } else {
                 throw new StudentNotMatchingException();
             }
