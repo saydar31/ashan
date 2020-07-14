@@ -6,12 +6,6 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile</title>
-<<<<<<< HEAD
-</head>
-<body>
-${student.name}
-${student.competenceState}
-=======
     <script>
         function sendFile() {
             var token = $("meta[name='_csrf']").attr("content");
@@ -53,8 +47,5 @@ ${student.competenceState}
     <input type="hidden" id="file_hidden">
     <div class="filename"></div>
 </div>
-    ${student.name}
-    ${student.competenceState}
->>>>>>> 678de59d103cce8a7a0067fd535e78768ea85834
 </body>
 </html>

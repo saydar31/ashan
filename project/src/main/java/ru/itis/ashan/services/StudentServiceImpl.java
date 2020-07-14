@@ -1,11 +1,13 @@
 package ru.itis.ashan.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import ru.itis.ashan.entities.student.Student;
+import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.repositories.StudentRepository;
+import java.util.List;
 
-import java.util.Optional;
 
 @Service
 public class StudentServiceImpl implements StudentService {
@@ -15,7 +17,13 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Student getStudentById(Long id) {
-        Optional<Student> student = studentRepository.findById(id);
-        return student.orElse(null);
+        return studentRepository.findById(id)
+                .orElseThrow(() -> new UsernameNotFoundException("User with id " + id + " doesn't exist"));
+
+    }
+
+    @Override
+    public List<StudentDto> findAll() {
+        return StudentDto.from(studentRepository.findAll());
     }
 }

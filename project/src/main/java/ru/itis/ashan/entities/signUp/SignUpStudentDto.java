@@ -10,7 +10,6 @@ public class SignUpStudentDto {
     private String patronymic;
     private Integer course;
     private Integer groupNumber;
-
     private String mail;
     private String password;
 }

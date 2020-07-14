@@ -20,6 +20,8 @@ public class Employer extends UserModel {
     @Column(nullable = false)
     private String companyName;
 
+    private String phoneNumber;;
+
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "employer")
     private Set<Student> students;
 
