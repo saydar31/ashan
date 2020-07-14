@@ -28,6 +28,8 @@ public class StudentDto extends UserDto {
 
     private CompetenceState competenceState;
 
+    private String competence;
+
     public static StudentDto castToDto(Student student) {
         StudentDto studentDto = StudentDto.builder()
                 .surname(student.getSurname())
@@ -40,6 +42,7 @@ public class StudentDto extends UserDto {
                 .mail(student.getMail())
                 .state(student.getState())
                 .role(student.getRole())
+                .competence(student.getCompetence())
                 .build();
 
         if(student.getEmployer() != null){
