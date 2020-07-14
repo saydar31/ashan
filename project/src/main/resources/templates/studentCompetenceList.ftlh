@@ -8,10 +8,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     function confirm(id) {
+        var token = $("meta[name='_csrf']").attr("content");
+        var header = $("meta[name='_csrf_header']").attr("content");
         $.ajax(
             {
                 type: "POST",
-                url: "/competence/student/"+id+"/confirm"
+                url: "/competence/student/"+id+"/confirm",
+                processData: false,
+                contentType: false,
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader(header,token)
+                }
             }
         )
     }
