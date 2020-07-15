@@ -26,27 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72f12b8b-aef0-4385-9b0c-a25e5892934b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dockerdir/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/javalab.KyyHkw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/javalab.KyyHkw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/javalab.KyyHkw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/javalab.KyyHkw/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/test_boot.f7qguQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/test_boot.f7qguQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/test_boot.f7qguQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/test_boot.f7qguQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/itis/ashan/services/AdminServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/itis/ashan/services/AdminServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/project.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +153,7 @@
       <workItem from="1594802128046" duration="98000" />
       <workItem from="1594802312116" duration="2185000" />
       <workItem from="1594814408905" duration="1496000" />
-      <workItem from="1594817890642" duration="1396000" />
+      <workItem from="1594817890642" duration="2479000" />
     </task>
     <servers />
   </component>
