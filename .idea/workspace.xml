@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="18e97b4e-ee82-410d-aca2-9803fef48c32" name="Default Changelist" comment="" />
+    <list default="true" id="72f12b8b-aef0-4385-9b0c-a25e5892934b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/student_page.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/student_page.ftlh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,23 +37,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="competence_check" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1eXVgkpdyLpNNSHIqETwPH7Ynue" />
+  <component name="ProjectId" id="1edYG7DewxXWKY56srhOUD13VNv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DatabaseDriversLRU" value="sqlite&#10;postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -36,518 +67,149 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/src/main/resources/http" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="ru.itis.ashan" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="C:\Users\ajdar\Java\Ashan\ashan\project\src\main\resources\templates" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.itis.ashan.services" />
     </key>
   </component>
-  <component name="RestClientSettings">
-    <option name="REQUEST_HISTORY">
-      <list>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/admin/refuse_user" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwibWFpbCI6IjIiLCJyb2xlIjoiVEVBQ0hFUiIsInN0YXRlIjoiTk9UX0NPTkZJUk1FRCJ9.J53RLdLnkIeHzkLRtWCRaguhyZKS_wTW4L_iUjvjw5U" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: &quot;1&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/admin/refuse_user" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: &quot;1&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/admin/refuse_user" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: &quot;2&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/admin/confirm_user" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: &quot;4&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/admin/confirm_user" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: &quot;2&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/admin/confirm_user" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: &quot;1&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/admin/confirm_user" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: 1&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/admin/confirm_user" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;mail&quot;: &quot;1&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080/api/admin/mot_confirmed_employers" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080/api/admin/mot_confirmed_students" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/signIn" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;mail&quot;: &quot;alex@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;1&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/test" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwibWFpbCI6IjIiLCJyb2xlIjoiVEVBQ0hFUiIsInN0YXRlIjoiTk9UX0NPTkZJUk1FRCJ9.J53RLdLnkIeHzkLRtWCRaguhyZKS_wTW4L_iUjvjw5U" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/test" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciiJIUzI1NiJ9.eyJzdWIiOiIyIiwibWFpbCI6IjIiLCJyb2xlIjoiVEVBQ0hFUiIsInN0YXRlIjoiTk9UX0NPTkZJUk1FRCJ9.J53RLdLnkIeHzkLRtWCRaguhyZKS_wTW4L_iUjvjw5U" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/test" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUI1NiJ9.eyJzdWIiOiIyIiwibWFpbCI6IjIiLCJyb2xlIjoiVEVBQ0hFUiIsInN0YXRlIjoiTk9UX0NPTkZJUk1FRCJ9.J53RLdLnkIeHzkLRtWCRaguhyZKS_wTW4L_iUjvjw5U" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/signIn" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;mail&quot;: &quot;2&quot;,&#10;  &quot;password&quot;: &quot;2&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/test" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwibWFpbCI6IjEiLCJyb2xlIjoiU1RVREVOVCIsInN0YXRlIjoiTk9UX0NPTkZJUk1FRCJ9.QWMl9NWnLeX07EM5GpIW5dl0grlot_FpmhmFkJz6okc" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080/api/signIn" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;mail&quot;: &quot;1&quot;,&#10;  &quot;password&quot;: &quot;1&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.AshanApplication">
-    <configuration name="request#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/main/resources/http/request.http" index="3" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="request#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/main/resources/http/request.http" index="4" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="request#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/main/resources/http/request.http" index="5" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="request#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/main/resources/http/request.http" index="6" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="request#7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/main/resources/http/request.http" index="7" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="AshanApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="project" />
+      <module name="ashan" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.itis.ashan.AshanApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="HTTP Request.request#7" />
-        <item itemvalue="HTTP Request.request#6" />
-        <item itemvalue="HTTP Request.request#5" />
-        <item itemvalue="HTTP Request.request#4" />
-        <item itemvalue="HTTP Request.request#3" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="18e97b4e-ee82-410d-aca2-9803fef48c32" name="Default Changelist" comment="" />
-      <created>1594468037636</created>
+      <changelist id="72f12b8b-aef0-4385-9b0c-a25e5892934b" name="Default Changelist" comment="" />
+      <created>1594652837993</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594468037636</updated>
-      <workItem from="1594468044648" duration="20337000" />
-      <workItem from="1594541037759" duration="42136000" />
-      <workItem from="1594645618435" duration="6301000" />
-      <workItem from="1594653083881" duration="2700000" />
-      <workItem from="1594662394766" duration="1137000" />
-      <workItem from="1594663688664" duration="86000" />
-      <workItem from="1594726069620" duration="15283000" />
-      <workItem from="1594745877018" duration="5985000" />
-      <workItem from="1594752801665" duration="7488000" />
-      <workItem from="1594796945333" duration="3324000" />
+      <updated>1594652837993</updated>
+      <workItem from="1594652845582" duration="4643000" />
+      <workItem from="1594707889453" duration="10198000" />
+      <workItem from="1594739377281" duration="16124000" />
+      <workItem from="1594790855555" duration="8229000" />
+      <workItem from="1594802128046" duration="98000" />
+      <workItem from="1594802312116" duration="2185000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="895" y="447" width="186" height="211" key="#Assign_Data_Sources" timestamp="1594487997730">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="895" y="447" width="186" height="211" key="#Assign_Data_Sources/67.27.1853.1053@67.27.1853.1053" timestamp="1594487997730" />
-    <state x="625" y="406" width="1285" height="293" key="#SQL_Dialects" timestamp="1594642193906">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="625" y="406" width="1285" height="293" key="#SQL_Dialects/67.27.1853.1053@67.27.1853.1053" timestamp="1594642193906" />
-    <state x="1051" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594474766800">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="1051" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1594474766800" />
-    <state x="1169" y="357" width="564" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594642178861">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="1169" y="357" width="564" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1594642178861" />
-    <state x="801" y="262" width="374" height="581" key="#com.intellij.ide.util.MemberChooser" timestamp="1594797139795">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="801" y="262" width="374" height="581" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1594797139795" />
-    <state x="566" y="480" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594653166851">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="566" y="480" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1594653166851" />
-    <state x="762" y="437" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1594540529319">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="762" y="437" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/67.27.1853.1053@67.27.1853.1053" timestamp="1594540529319" />
-    <state x="709" y="181" width="558" height="742" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594561725274">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="709" y="181" width="558" height="742" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1594561725274" />
-    <state x="1190" y="302" width="524" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594798505453">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="1190" y="302" width="524" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1594798505453" />
-    <state x="1239" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1594790600023">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="1239" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1594790600023" />
-    <state width="1809" height="2" key="GridCell.Tab.0.bottom" timestamp="1594808980920">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1809" height="2" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1594808980920" />
-    <state width="1809" height="2" key="GridCell.Tab.0.center" timestamp="1594808980919">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1809" height="2" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1594808980919" />
-    <state width="1809" height="2" key="GridCell.Tab.0.left" timestamp="1594808980919">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1809" height="2" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1594808980919" />
-    <state width="1809" height="2" key="GridCell.Tab.0.right" timestamp="1594808980920">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1809" height="2" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1594808980919" />
-    <state width="1809" height="2" key="GridCell.Tab.1.bottom" timestamp="1594808980920">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1809" height="2" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1594808980920" />
-    <state width="1809" height="2" key="GridCell.Tab.1.center" timestamp="1594808980920">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1809" height="2" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1594808980920" />
-    <state width="1809" height="2" key="GridCell.Tab.1.left" timestamp="1594808980920">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1809" height="2" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1594808980920" />
-    <state width="1809" height="2" key="GridCell.Tab.1.right" timestamp="1594808980920">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1809" height="2" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1594808980920" />
-    <state width="883" height="201" key="GridCell.Tab.2.bottom" timestamp="1594796828486">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="883" height="201" key="GridCell.Tab.2.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1594796828486" />
-    <state width="883" height="201" key="GridCell.Tab.2.center" timestamp="1594796828486">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="883" height="201" key="GridCell.Tab.2.center/67.27.1853.1053@67.27.1853.1053" timestamp="1594796828486" />
-    <state width="883" height="201" key="GridCell.Tab.2.left" timestamp="1594796828486">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="883" height="201" key="GridCell.Tab.2.left/67.27.1853.1053@67.27.1853.1053" timestamp="1594796828486" />
-    <state width="883" height="201" key="GridCell.Tab.2.right" timestamp="1594796828486">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="883" height="201" key="GridCell.Tab.2.right/67.27.1853.1053@67.27.1853.1053" timestamp="1594796828486" />
-    <state width="247" height="458" key="HiddenNamespacesPopup" timestamp="1594474964069">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="247" height="458" key="HiddenNamespacesPopup/67.27.1853.1053@67.27.1853.1053" timestamp="1594474964069" />
-    <state x="1321" y="300" width="343" height="505" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1594476537616">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="1321" y="300" width="343" height="505" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/67.27.1853.1053@67.27.1853.1053" timestamp="1594476537616" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itis/ashan/entities/teacher/TeacherDto.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itis/ashan/entities/teacher/TeacherDto.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo typeName="ru.itis.ashan.entities.teacher.Teacher" fieldName="students" />
-      </pinned-members>
-    </pin-to-top-manager>
+  <component name="WindowStateProjectService">
+    <state x="0" y="77" width="1533" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594813521114">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="77" width="1533" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594813521114" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1594795952589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594795952589" />
+    <state x="350" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594710252577">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="350" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594710252577" />
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594797844091">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594797844091" />
+    <state width="1493" height="46" key="GridCell.Tab.0.bottom" timestamp="1594803152866">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="46" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594803152866" />
+    <state width="1493" height="46" key="GridCell.Tab.0.center" timestamp="1594803152866">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="46" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594803152866" />
+    <state width="1493" height="46" key="GridCell.Tab.0.left" timestamp="1594803152866">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="46" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594803152866" />
+    <state width="1493" height="46" key="GridCell.Tab.0.right" timestamp="1594803152866">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="46" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594803152866" />
+    <state width="1493" height="176" key="GridCell.Tab.1.bottom" timestamp="1594803179954">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="176" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594803179954" />
+    <state width="1493" height="176" key="GridCell.Tab.1.center" timestamp="1594803179954">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="176" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594803179954" />
+    <state width="1493" height="176" key="GridCell.Tab.1.left" timestamp="1594803179954">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="176" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594803179954" />
+    <state width="1493" height="176" key="GridCell.Tab.1.right" timestamp="1594803179954">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="176" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594803179954" />
+    <state width="1493" height="46" key="GridCell.Tab.2.bottom" timestamp="1594803152664">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="46" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594803152664" />
+    <state width="1493" height="46" key="GridCell.Tab.2.center" timestamp="1594803152664">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="46" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1594803152664" />
+    <state width="1493" height="46" key="GridCell.Tab.2.left" timestamp="1594803152664">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="46" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1594803152664" />
+    <state width="1493" height="46" key="GridCell.Tab.2.right" timestamp="1594803152664">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="46" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1594803152664" />
+    <state x="584" y="193" key="chooseDestDirectoryDialog" timestamp="1594653171903">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="193" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1594653171903" />
+    <state x="583" y="281" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1594715920113">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="583" y="281" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1594715920113" />
+    <state x="349" y="70" key="com.intellij.database.dbimport.ImportDialog" timestamp="1594798558117">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="70" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1594798558117" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1594758706090">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594758706090" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594796073688">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594796073688" />
   </component>
 </project>

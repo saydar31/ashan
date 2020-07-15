@@ -1,4 +1,5 @@
-body{
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body, .navbar-light{
     background: #C9DDFF; /* fallback for old browsers */
     background: -webkit-linear-gradient(right, #dcb3ff, #c9ddff);
     background: -moz-linear-gradient(right,  #dcb3ff, #C9DDFF);
@@ -7,13 +8,11 @@ body{
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #C9DDFF;
+
+}
+.btn {
+    background-color: #b07aff!important;
+    border-color: #b07aff!important;
 }
 
 html,
@@ -26,3 +25,6 @@ body {
     margin-bottom: 0.0rem;
 }
 
+a, a:hover {
+    color: white;
+}
