@@ -1,48 +1,68 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <script>
+        function sendFile() {
+            var token = $("meta[name='_csrf']").attr("content");
+            var header = $("meta[name='_csrf_header']").attr("content");
+            // данные для отправки
+            let formData = new FormData();
+            // забрал файл из input
+            let files = ($('#file'))[0]['files'];
+            // добавляю файл в formData
+            [].forEach.call(files, function (file) {
+                formData.append("file", file);
+            });
+
+            $.ajax({
+                type: "POST",
+                beforeSend: function (request) {
+                    request.setRequestHeader(header, token);
+                },
+                url: "/student/photo",
+                data: formData,
+                processData: false,
+                contentType: false
+            })
+                .done(function (html) {
+                    $("#content").html(html);
+                })
+                .fail(function () {
+                    alert('Error')
+                });
+        }
+    </script>
     <title>Profile</title>
 </head>
 <body>
-<form method="post" enctype="multipart/form-data" class="row">
-
-    </div><!--/col-3-->
-    <div class="col-sm-9">
-
-        <div class="tab-content">
-            <div class="tab-pane active" id="home">
-                <p>Имя: ${student.name}</p>
-                <p>Фамилие: ${student.surname}</p>
-                <p>Отчество: ${student.patronymic}</p>
-                <p>Курс: ${student.course}</p>
-                <p>Группа: ${student.groupNumber}</p>
-
-                <#if student.teacher?has_content>
-                    <p>Преподаватель: ${student.teacher.surname} ${student.teacher.name}</p>
-                <#else>
-                    <div class="form-group">
-                        <form action="/student/home/edit" method="POST">
-                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-                            <select class="studentEditDto" id="inputGroupSelect06">
-                                <#if teachers??>
-                                    <#list teachers as teacher>
-                                        <option name="teacherId" value="${teacher.id}">${teacher.name} ${teacher.surname}</option>
-                                    </#list>
-                                </#if>
-                            </select>
-                            <input type="submit" value="Сохранить">
-                        </form>
-                    </div>
-                </#if>
-            </div>
-            <hr>
-        </div><!--/tab-pane-->
+<#include "include/navbar.ftlh">
+<div class="container-fluid">
+    <div class="row">
+        <table>
+            <tr><td>Имя</td><td>${student.surname}</td></tr>
+            <tr><td>Фамилия</td><td>${student.name}</td></tr>
+            <tr><td>Отчество</td><td>${student.patronymic}</td></tr>
+            <tr><td>Курс</td><td>${student.course}</td></tr>
+            <tr><td>Номер группы</td><td>11-${student.groupNumber}</td></tr>
+            <#if student.competence??>
+                <tr><td>Компетенция</td><td>${student.competence}</td></tr>
+            </#if>
+            <#if student.teacher??>
+                <tr><td>Преподаватель</td><td>${student.teacher.surname} ${student.teacher.name} ${student.teacher.patronymic}</td></tr>
+            </#if>
+        </table>
     </div>
-    </div>
-</form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 </html>

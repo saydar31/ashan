@@ -10,8 +10,10 @@ import ru.itis.ashan.services.TeacherService;
 
 @Controller
 public class TeacherProfileController {
+
     @Autowired
     private TeacherService teacherService;
+
     @GetMapping("/teacher/{id:\\d+}")
     public ModelAndView getTeacherPage(@PathVariable Long id) {
         ModelAndView modelAndView = new ModelAndView("teacher_profile");

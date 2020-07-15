@@ -15,6 +15,7 @@ import java.util.List;
 
 @Controller
 public class CompetenceConfirmationPageController {
+
     @Autowired
     private StudentService studentService;
 

@@ -9,15 +9,14 @@ import ru.itis.ashan.entities.teacher.TeacherDto;
 import ru.itis.ashan.repositories.StudentRepository;
 import ru.itis.ashan.exceptions.UserNotFoundException;
 import ru.itis.ashan.repositories.TeacherRepository;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
 @Component
 public class TeacherServiceImpl implements TeacherService {
-    @Autowired
 
+    @Autowired
     private StudentRepository studentRepository;
 
     @Autowired
@@ -38,9 +37,14 @@ public class TeacherServiceImpl implements TeacherService {
         List<Teacher> confirmedTeachers = teacherRepository.findAllConfirmed();
         List<TeacherDto> dtoList = new LinkedList<>();
 
-        for (Teacher teacher: confirmedTeachers){
+        for (Teacher teacher : confirmedTeachers) {
             dtoList.add(TeacherDto.castToDto(teacher));
         }
         return dtoList;
+    }
+
+
+    public List<TeacherDto> findAll() {
+        return TeacherDto.from(teacherRepository.findAll());
     }
 }

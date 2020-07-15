@@ -9,8 +9,10 @@ import ru.itis.ashan.services.EmployerService;
 
 @Controller
 public class EmployerPageController {
+
     @Autowired
     private EmployerService employerService;
+
     @GetMapping("/employer/{id:\\d+}")
     public ModelAndView getEmployeePage(@PathVariable Long id){
         ModelAndView modelAndView = new ModelAndView("employer_page");

@@ -9,7 +9,6 @@ import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.teacher.Teacher;
 import ru.itis.ashan.repositories.StudentRepository;
 import ru.itis.ashan.repositories.TeacherRepository;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -64,5 +63,16 @@ public class StudentServiceImpl implements StudentService {
     public List<StudentDto> getUnconfirmedStudentsByTeacher(Teacher teacher) {
         List<Student> students = studentRepository.findAllNotConfirmedCompetenceByTeacher(teacher);
         return students.stream().map(StudentDto::castToDto).collect(Collectors.toList());
+    }
+
+    @Override
+    public void editStudent(Student student, StudentDto studentDto) {
+        student.setName(studentDto.getName());
+        student.setSurname(studentDto.getSurname());
+        student.setPatronymic(studentDto.getPatronymic());
+        student.setCourse(studentDto.getCourse());
+        student.setGroupNumber(studentDto.getGroupNumber());
+        student.setTeacher(Teacher.castToModel(studentDto.getTeacherDto()));
+        studentRepository.save(student);
     }
 }

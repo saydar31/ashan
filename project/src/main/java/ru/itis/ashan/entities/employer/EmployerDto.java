@@ -45,7 +45,7 @@ public class EmployerDto extends UserDto {
                 .role(employer.getRole())
                 .state(employer.getState())
                 .build();
-
+        employerDto.studentDtoSet = new HashSet<>();
 
         if (employer.getStudents() != null) {
             employerDto.setStudentDtoSet(new HashSet<>());
@@ -55,6 +55,4 @@ public class EmployerDto extends UserDto {
         }
         return employerDto;
     }
-
-
 }

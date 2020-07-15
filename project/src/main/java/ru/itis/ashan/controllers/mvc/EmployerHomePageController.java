@@ -12,6 +12,7 @@ import ru.itis.ashan.security.details.UserDetailsImpl;
 
 @Controller
 public class EmployerHomePageController {
+
     @GetMapping("/employer/home")
     @PreAuthorize("hasAuthority('EMPLOYER')")
     public ModelAndView getEmployerHomePage(@AuthenticationPrincipal UserDetailsImpl userDetails){

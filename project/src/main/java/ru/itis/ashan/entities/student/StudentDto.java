@@ -68,6 +68,7 @@ public class StudentDto extends UserDto {
                 .patronymic(student.getPatronymic())
                 .course(student.getCourse())
                 .groupNumber(student.getGroupNumber())
+                .competence(student.getCompetence())
                 .competenceState(student.getCompetenceState())
                 .id(student.getId())
                 .mail(student.getMail())
@@ -78,6 +79,5 @@ public class StudentDto extends UserDto {
 
     public static List<StudentDto> from(List<Student> students) {
         return students.stream().map(StudentDto::castToDto).collect(Collectors.toList());
-
     }
 }

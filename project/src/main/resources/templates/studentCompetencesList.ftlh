@@ -41,9 +41,11 @@
 </script>
 <body>
 <ol>
-    <#list students as student>
-        <li><a href="/student/${student.id}">${student.name} ${student.surname} 11-${student.groupNumber}, ${student.competence}</a>, <button onclick="confirm('${student.id}')">confirm</button> <button onclick="refuse('${student.id}')">refuse</button></li>
-    </#list>
+    <#if students?size != 0>
+        <#list students as student>
+            <li><a href="/student/${student.id}">${student.name} ${student.surname} 11-${student.groupNumber}, ${student.competence}</a>, <button onclick="confirm('${student.id}')">confirm</button> <button onclick="refuse('${student.id}')">refuse</button></li>
+        </#list>
+    </#if>
 </ol>
 </body>
 </html>

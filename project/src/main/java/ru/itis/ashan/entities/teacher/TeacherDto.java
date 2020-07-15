@@ -11,7 +11,9 @@ import ru.itis.ashan.entities.user.UserDto;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Getter
 @Setter
@@ -58,5 +60,9 @@ public class TeacherDto extends UserDto {
                 .role(teacher.getRole())
                 .state(teacher.getState())
                 .build();
+    }
+
+    public static List<TeacherDto> from(List<Teacher> teachers) {
+        return teachers.stream().map(TeacherDto::castToDto).collect(Collectors.toList());
     }
 }

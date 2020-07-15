@@ -16,12 +16,11 @@ import ru.itis.ashan.security.details.UserDetailsImpl;
 import ru.itis.ashan.services.FileService;
 import ru.itis.ashan.services.StudentService;
 import ru.itis.ashan.services.TeacherService;
-import ru.itis.ashan.services.UserService;
 
 import java.util.List;
 
 @Controller
-public class StudentHomePageController {
+public class StudentProfileController {
 
     @Autowired
     private FileService fileService;
@@ -62,6 +61,5 @@ public class StudentHomePageController {
         Student student = (Student) userDetail.getUser();
         studentService.updateStudentData(student, studentEditDto);
         return "redirect:/student/home";
-
     }
 }
