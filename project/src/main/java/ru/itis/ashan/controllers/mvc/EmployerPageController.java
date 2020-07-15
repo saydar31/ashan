@@ -13,7 +13,7 @@ public class EmployerPageController {
     private EmployerService employerService;
     @GetMapping("/employer/{id:\\d+}")
     public ModelAndView getEmployeePage(@PathVariable Long id){
-        ModelAndView modelAndView = new ModelAndView("employer_profile");
+        ModelAndView modelAndView = new ModelAndView("employer_page");
         modelAndView.addObject("employer", employerService.getById(id));
         return modelAndView;
     }

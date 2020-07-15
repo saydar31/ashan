@@ -8,6 +8,7 @@
     <title>Student page</title>
 </head>
 <body>
+<<<<<<< HEAD
 <p>Студент
     <#if student.state == "CONFIRMED">
         [Аккаунт подтвержден]

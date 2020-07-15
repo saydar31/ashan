@@ -38,7 +38,6 @@ public class TeacherDto extends UserDto {
                 .role(teacher.getRole())
                 .state(teacher.getState())
                 .build();
-
         if(teacher.getStudents() != null) {
             teacherDto.setStudentDtoSet(new HashSet<>());
             for (Student student : teacher.getStudents()) {

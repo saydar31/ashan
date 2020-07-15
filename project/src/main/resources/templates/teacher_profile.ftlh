@@ -8,7 +8,17 @@
     <title>Profile</title>
 </head>
 <body>
-${teacher.name}
-${teacher.mail}
+<table>
+    Teacher
+    <tr><td></td><td>${teacher.surname}</td></tr>
+    <tr><td></td><td>${teacher.name}</td></tr>
+    <tr><td></td><td>${teacher.patronymic}</td></tr>
+    <tr><td></td><td>${teacher.mail}</td></tr>
+</table>
+<ol>
+    <#list teacher.studentDtoSet as student>
+        <li><a href="/student/${student.id}">${student.name} ${student.surname} 11-${student.groupNumber}, ${student.competence}</a></li>
+    </#list>
+</ol>
 </body>
 </html>

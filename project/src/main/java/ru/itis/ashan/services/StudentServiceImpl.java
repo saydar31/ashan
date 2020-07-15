@@ -12,6 +12,7 @@ import ru.itis.ashan.repositories.TeacherRepository;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -58,4 +59,10 @@ public class StudentServiceImpl implements StudentService {
     }
 
 
+
+    @Override
+    public List<StudentDto> getUnconfirmedStudentsByTeacher(Teacher teacher) {
+        List<Student> students = studentRepository.findAllNotConfirmedCompetenceByTeacher(teacher);
+        return students.stream().map(StudentDto::castToDto).collect(Collectors.toList());
+    }
 }
