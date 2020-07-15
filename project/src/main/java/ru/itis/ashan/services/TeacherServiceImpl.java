@@ -8,6 +8,7 @@ import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.teacher.Teacher;
 import ru.itis.ashan.entities.teacher.TeacherDto;
 import ru.itis.ashan.repositories.StudentRepository;
+import ru.itis.ashan.repositories.TeacherRepository;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -17,6 +18,9 @@ public class TeacherServiceImpl implements TeacherService {
 
     @Autowired
     private StudentRepository studentRepository;
+
+    @Autowired
+    private TeacherRepository teacherRepository;
 
     @Override
     public List<StudentDto> findAllNotConfirmedСompetenceByTeacher(TeacherDto teacherDto) {
@@ -53,5 +57,16 @@ public class TeacherServiceImpl implements TeacherService {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public List<TeacherDto> findConfirmedTeachers() {
+        List<Teacher> confirmedTeachers = teacherRepository.findAllConfirmed();
+        List<TeacherDto> dtoList = new LinkedList<>();
+
+        for (Teacher teacher: confirmedTeachers){
+            dtoList.add(TeacherDto.castToDto(teacher));
+        }
+        return dtoList;
     }
 }

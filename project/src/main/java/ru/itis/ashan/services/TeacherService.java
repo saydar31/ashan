@@ -18,4 +18,6 @@ public interface TeacherService {
     //подтверждение компетенции
     boolean confirmCompetence(StudentDto studentDto, TeacherDto teacherDto);
 
+    List<TeacherDto> findConfirmedTeachers();
+
 }

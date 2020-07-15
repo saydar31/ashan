@@ -8,6 +8,7 @@ import ru.itis.ashan.entities.user.UserDto;
 
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
+import java.util.HashSet;
 import java.util.Set;
 
 @Data
@@ -45,7 +46,9 @@ public class EmployerDto extends UserDto {
                 .state(employer.getState())
                 .build();
 
+
         if (employer.getStudents() != null) {
+            employerDto.setStudentDtoSet(new HashSet<>());
             for (Student student : employer.getStudents()) {
                 employerDto.studentDtoSet.add(StudentDto.getDto(student));
             }

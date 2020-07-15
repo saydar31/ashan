@@ -10,4 +10,7 @@ public interface TeacherRepository extends JpaRepository<Teacher, Long> {
 
     @Query("SELECT t FROM Teacher t WHERE t.state='NOT_CONFIRMED'")
     List<Teacher> findAllNotConfirmed();
+
+    @Query("SELECT t FROM Teacher t WHERE t.state='CONFIRMED'")
+    List<Teacher> findAllConfirmed();
 }
