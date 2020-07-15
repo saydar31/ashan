@@ -40,14 +40,14 @@ public class AdminServiceTest {
     }
 
 
-    @Test
+   // @Test
     void findAllNotConfirmedStudents() {
         teacherRepository.save(teacher);
         List<TeacherDto> teacherDtoList = adminService.getAllNotConfirmedTeachers();
         System.out.println(teacherDtoList.size());
     }
 
-    @Test
+  //  @Test
     void confirmUser(){
         teacher = teacherRepository.save(teacher);
         TeacherDto teacherDto = TeacherDto.castToDto(teacher);

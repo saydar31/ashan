@@ -26,8 +26,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72f12b8b-aef0-4385-9b0c-a25e5892934b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dockerdir/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/javalab.KyyHkw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/javalab.KyyHkw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/javalab.KyyHkw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/javalab.KyyHkw/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/test_boot.f7qguQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/test_boot.f7qguQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/test_boot.f7qguQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f4cbc52-b5d3-4960-b33a-ad2ef394d2ad/storage_v2/_src_/database/test_boot.f7qguQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/student_page.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/student_page.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/itis/ashan/services/AdminServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/itis/ashan/services/AdminServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/project.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +67,12 @@
         <entry key="$PROJECT_DIR$/.." value="competence_check" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1edYG7DewxXWKY56srhOUD13VNv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,7 +87,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -74,6 +95,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -83,7 +105,28 @@
       <recent name="ru.itis.ashan.services" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.dockerdir/Dockerfile">
+    <configuration name="AdminServiceTest.findAllNotConfirmedStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ashan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.itis.ashan.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.itis.ashan.services" />
+      <option name="MAIN_CLASS_NAME" value="ru.itis.ashan.services.AdminServiceTest" />
+      <option name="METHOD_NAME" value="findAllNotConfirmedStudents" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AshanApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ashan" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.itis.ashan.AshanApplication" />
@@ -91,6 +134,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dockerdir/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="" />
+          <option name="buildCliOptions" value="" />
+          <option name="buildOnly" value="true" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="dockerdir/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.dockerdir/Dockerfile" />
+        <item itemvalue="JUnit.AdminServiceTest.findAllNotConfirmedStudents" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -108,6 +172,8 @@
       <workItem from="1594790855555" duration="8229000" />
       <workItem from="1594802128046" duration="98000" />
       <workItem from="1594802312116" duration="2185000" />
+      <workItem from="1594814408905" duration="1496000" />
+      <workItem from="1594817890642" duration="1396000" />
     </task>
     <servers />
   </component>
@@ -126,7 +192,16 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="73" key="#Docker" timestamp="1594819282133">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="73" key="#Docker/0.0.1536.824@0.0.1536.824" timestamp="1594819282133" />
     <state x="0" y="77" width="1533" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594813521114">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -143,38 +218,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594797844091" />
-    <state width="1493" height="46" key="GridCell.Tab.0.bottom" timestamp="1594803152866">
+    <state x="491" y="2" key="#dockerdir/Dockerfile" timestamp="1594819287418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="46" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594803152866" />
-    <state width="1493" height="46" key="GridCell.Tab.0.center" timestamp="1594803152866">
+    <state x="491" y="2" key="#dockerdir/Dockerfile/0.0.1536.824@0.0.1536.824" timestamp="1594819287418" />
+    <state x="550" y="169" key="FileChooserDialogImpl" timestamp="1594819280404">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="46" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594803152866" />
-    <state width="1493" height="46" key="GridCell.Tab.0.left" timestamp="1594803152866">
+    <state x="550" y="169" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594819280404" />
+    <state width="1493" height="263" key="GridCell.Tab.0.bottom" timestamp="1594819287497">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="46" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594803152866" />
-    <state width="1493" height="46" key="GridCell.Tab.0.right" timestamp="1594803152866">
+    <state width="1493" height="263" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594819287497" />
+    <state width="1493" height="263" key="GridCell.Tab.0.center" timestamp="1594819287496">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="46" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594803152866" />
-    <state width="1493" height="176" key="GridCell.Tab.1.bottom" timestamp="1594803179954">
+    <state width="1493" height="263" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594819287496" />
+    <state width="1493" height="263" key="GridCell.Tab.0.left" timestamp="1594819287495">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="176" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594803179954" />
-    <state width="1493" height="176" key="GridCell.Tab.1.center" timestamp="1594803179954">
+    <state width="1493" height="263" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594819287495" />
+    <state width="1493" height="263" key="GridCell.Tab.0.right" timestamp="1594819287497">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="176" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594803179954" />
-    <state width="1493" height="176" key="GridCell.Tab.1.left" timestamp="1594803179954">
+    <state width="1493" height="263" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594819287497" />
+    <state width="1493" height="33" key="GridCell.Tab.1.bottom" timestamp="1594818084002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="176" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594803179954" />
-    <state width="1493" height="176" key="GridCell.Tab.1.right" timestamp="1594803179954">
+    <state width="1493" height="33" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594818084002" />
+    <state width="1493" height="33" key="GridCell.Tab.1.center" timestamp="1594818084002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="176" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594803179954" />
+    <state width="1493" height="33" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594818084002" />
+    <state width="1493" height="33" key="GridCell.Tab.1.left" timestamp="1594818084002">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="33" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594818084002" />
+    <state width="1493" height="33" key="GridCell.Tab.1.right" timestamp="1594818084002">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="33" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594818084002" />
     <state width="1493" height="46" key="GridCell.Tab.2.bottom" timestamp="1594803152664">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -191,6 +274,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="46" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1594803152664" />
+    <state x="279" y="58" key="SettingsEditor" timestamp="1594817907002">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594817907002" />
     <state x="584" y="193" key="chooseDestDirectoryDialog" timestamp="1594653171903">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -203,10 +290,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="70" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1594798558117" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1594758706090">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1594817803077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594758706090" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594817803077" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594796073688">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
