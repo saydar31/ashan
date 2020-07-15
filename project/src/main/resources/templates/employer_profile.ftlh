@@ -8,7 +8,15 @@
     <title>Employer</title>
 </head>
 <body>
-${employer.companyName}
-${employer.mail}
+<table>
+    <tr><td>Название</td><td>${employer.companyName}</td></tr>
+    <tr><td>Почта</td><td>${employer.mail}</td></tr>
+    <tr><td>Телефон</td><td>${employer.phoneNumber}</td></tr>
+</table>
+<ol>
+    <#list employer.studentDtoSet as student>
+        <li><a href="/student/${student.id}">${student.surname} ${student.name} ${student.patronymic} 11-${student.groupNumber}</a></li>
+    </#list>
+</ol>
 </body>
 </html>
