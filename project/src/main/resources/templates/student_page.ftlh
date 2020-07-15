@@ -65,7 +65,7 @@
             <#if student.competence??>
                 <tr><td>Компетенция</td><td>${student.competence}</td></tr>
             </#if>
-            <#if student.teacher??>
+            <#if student.teacherDto??>
                 <tr><td>Преподаватель</td><td><a href="/teacher/${student.teacherDto.getId()}">${student.teacherDto.getSurname()} ${student.teacherDto.getName()}</a></td></tr>
             <#else>
                 <tr><td>Преподаватель</td><td> не выбран</td></tr>
