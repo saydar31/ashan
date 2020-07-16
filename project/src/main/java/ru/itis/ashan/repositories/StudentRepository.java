@@ -29,4 +29,6 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 
     @Query("SELECT COUNT(s) FROM Student s WHERE s.id=:id and s.teacher=:teacher")
     Long existStudentByIdAndTeacher(@Param("id") Long id, @Param("teacher") Teacher teacher);
+
+    List<Student> findAllByTeacher(Teacher teacher);
 }

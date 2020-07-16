@@ -32,6 +32,16 @@ public class Teacher extends UserModel {
     @Column(nullable = false)
     private String patronymic;
 
+    //образование
+    private String education;
+    //занимаемая должность
+    private String positionHeld;
+    //знания языков
+    private String knowledgeOfLanguages;
+    //дополнительная информация
+    private String additionInformation;
+
+
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "teacher")
     private Set<Student> students;
 
