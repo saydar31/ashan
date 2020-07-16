@@ -20,15 +20,4 @@ public class StudentServiceImpl implements StudentService {
         Optional<Student> student = studentRepository.findById(id);
         return student.orElse(null);
     }
-
-    @Override
-    public void editStudent(Student student, StudentDto studentDto) {
-        student.setName(studentDto.getName());
-        student.setSurname(studentDto.getSurname());
-        student.setPatronymic(studentDto.getPatronymic());
-        student.setCourse(studentDto.getCourse());
-        student.setGroupNumber(studentDto.getGroupNumber());
-        student.setTeacher(Teacher.castToModel(studentDto.getTeacherDto()));
-        studentRepository.save(student);
-    }
 }
