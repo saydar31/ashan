@@ -6,6 +6,7 @@ import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.teacher.Teacher;
 import ru.itis.ashan.entities.teacher.TeacherDto;
+import ru.itis.ashan.entities.teacher.TeacherEditForm;
 import ru.itis.ashan.repositories.StudentRepository;
 import ru.itis.ashan.exceptions.UserNotFoundException;
 import ru.itis.ashan.repositories.TeacherRepository;
@@ -50,5 +51,20 @@ public class TeacherServiceImpl implements TeacherService {
     @Override
     public TeacherDto getTeacherOfStudent(StudentDto student) {
         return getTeacherById(student.getTeacherDto().getId());
+    }
+
+    @Override
+    public void editTeacher(Long id, TeacherEditForm teacherEditForm) {
+        Teacher teacher = teacherRepository.getOne(id);
+        teacher.setName(teacherEditForm.getName());
+        teacher.setSurname(teacherEditForm.getSurname());
+        teacher.setPatronymic(teacherEditForm.getPatronymic());
+
+        teacher.setPositionHeld(teacherEditForm.getPositionHeld());
+        teacher.setKnowledgeOfLanguages(teacherEditForm.getKnowledgeOfLanguages());
+        teacher.setEducation(teacherEditForm.getEducation());
+        teacher.setAdditionInformation(teacherEditForm.getAdditionInformation());
+
+        teacherRepository.save(teacher);
     }
 }

@@ -9,14 +9,14 @@ import ru.itis.ashan.entities.teacher.TeacherDto;
 import ru.itis.ashan.services.TeacherService;
 
 @Controller
-public class TeacherProfileController {
+public class TeacherPageController {
 
     @Autowired
     private TeacherService teacherService;
 
     @GetMapping("/teacher/{id:\\d+}")
     public ModelAndView getTeacherPage(@PathVariable Long id) {
-        ModelAndView modelAndView = new ModelAndView("teacher_profile");
+        ModelAndView modelAndView = new ModelAndView("teacher_page");
         TeacherDto teacherDto = teacherService.getTeacherById(id);
         modelAndView.addObject("teacher",teacherDto);
         return modelAndView;

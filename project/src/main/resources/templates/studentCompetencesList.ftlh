@@ -40,6 +40,7 @@
     }
 </script>
 <body>
+<h3><a href="/teacher/home">Профиль</a> | <a href="/teacher/home/edit">Редактировать профиль</a> | <a href="/myStudents/competence/toConfirm">Список на подтверждение</a></h3>
 <ol>
     <#if students?size != 0>
         <#list students as student>
