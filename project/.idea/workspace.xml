@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5751527-8c3c-4430-a5a9-e757b151296f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1eldaGxH924fyOWsKqDBNTuATK7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ru/itis/ashan/services" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Bower" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ajdar\Java\Ashan\ashan\project\src\main\java\ru\itis\ashan\services" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.itis.ashan.services" />
+      <recent name="ru.itis.ashan.services.email" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AshanApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ashan" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.itis.ashan.AshanApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5751527-8c3c-4430-a5a9-e757b151296f" name="Default Changelist" comment="" />
+      <created>1594900174929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594900174929</updated>
+      <workItem from="1594900178065" duration="13129000" />
+      <workItem from="1594964118929" duration="11075000" />
+      <workItem from="1594989064171" duration="9909000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="668" y="302" key="#Assign_Data_Sources" timestamp="1594903178370">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="668" y="302" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1594903178370" />
+    <state x="361" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594901926958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594901926958" />
+    <state x="514" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594991204842">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="514" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1594991204842" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1594991664937">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594991664937" />
+    <state x="330" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594973883250">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="330" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594973883250" />
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594904780133">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594904780133" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1594911952153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594911952153" />
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1595004703914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595004703914" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1595004703914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595004703914" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1595004703914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595004703914" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1595004703914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595004703914" />
+    <state width="1493" height="2" key="GridCell.Tab.1.bottom" timestamp="1595004703914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595004703914" />
+    <state width="1493" height="2" key="GridCell.Tab.1.center" timestamp="1595004703914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1595004703914" />
+    <state width="1493" height="2" key="GridCell.Tab.1.left" timestamp="1595004703914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1595004703914" />
+    <state width="1493" height="2" key="GridCell.Tab.1.right" timestamp="1595004703914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1595004703914" />
+    <state width="1493" height="2" key="GridCell.Tab.2.bottom" timestamp="1595004703915">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595004703915" />
+    <state width="1493" height="2" key="GridCell.Tab.2.center" timestamp="1595004703915">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1595004703915" />
+    <state width="1493" height="2" key="GridCell.Tab.2.left" timestamp="1595004703915">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1595004703915" />
+    <state width="1493" height="2" key="GridCell.Tab.2.right" timestamp="1595004703915">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1595004703915" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1594910838761">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594910838761" />
+    <state x="579" y="260" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1594905723369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="579" y="260" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1594905723369" />
+    <state x="349" y="70" key="com.intellij.database.dbimport.ImportDialog" timestamp="1594913217600">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="70" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1594913217600" />
+    <state x="383" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594909112456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="383" y="25" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1594909112456" />
+    <state x="480" y="0" width="575" height="824" key="find.popup" timestamp="1594900286565">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="480" y="0" width="575" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1594900286565" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1594910488142">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594910488142" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594991121756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594991121756" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itis/ashan/services/email/MailContentServiceImpl.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itis/ashan/services/email/MailContentServiceImpl.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itis/ashan/services/email/MailContentServiceImpl.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itis/ashan/services/email/MailContentServiceImpl.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itis/ashan/services/EmployerServiceImpl.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ashan$AshanApplication.ic" NAME="AshanApplication Coverage Results" MODIFIED="1594991348336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
