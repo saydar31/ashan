@@ -8,9 +8,8 @@
     <title>Profile</title>
 </head>
 <body>
-<h3><a href="/teacher/home">Профиль</a> | <a href="/teacher/home/edit">Редактировать профиль</a> | <a href="/myStudents/competence/toConfirm">Список на подтверждение</a></h3>
 <table>
-    < <tr><td>Фамилия:</td><td>${teacher.surname}</td></tr>
+    <tr><td>Фамилия:</td><td>${teacher.surname}</td></tr>
     <tr><td>Имя:</td><td>${teacher.name}</td></tr>
     <tr><td>Отчество:</td><td>${teacher.patronymic}</td></tr>
     <tr><td>Почта:</td><td>${teacher.mail}</td></tr>

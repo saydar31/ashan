@@ -9,6 +9,7 @@ import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.tag.Tag;
 import ru.itis.ashan.entities.teacher.Teacher;
+import ru.itis.ashan.entities.teacher.TeacherDto;
 import ru.itis.ashan.repositories.StudentRepository;
 import ru.itis.ashan.repositories.TagRepository;
 import ru.itis.ashan.repositories.TeacherRepository;
@@ -54,6 +55,12 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public List<StudentDto> getUnconfirmedStudentsByTeacher(Teacher teacher) {
         List<Student> students = studentRepository.findAllNotConfirmedCompetenceByTeacher(teacher);
+        return students.stream().map(StudentDto::castToDto).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<StudentDto> getConfirmedStudentsByTeacher(TeacherDto teacher) {
+        List<Student> students = studentRepository.findAllConfirmedCompetenceByTeacher(Teacher.castToModel(teacher));
         return students.stream().map(StudentDto::castToDto).collect(Collectors.toList());
     }
 
