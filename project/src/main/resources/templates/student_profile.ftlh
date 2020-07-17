@@ -44,25 +44,46 @@
 <#include "include/navbar.ftlh">
 <div class="container-fluid">
     <div class="row">
-        <table>
-            <tr><td>Имя</td><td>${student.surname}</td></tr>
-            <tr><td>Фамилия</td><td>${student.name}</td></tr>
-            <tr><td>Отчество</td><td>${student.patronymic}</td></tr>
-            <tr><td>Курс</td><td>${student.course}</td></tr>
-            <tr><td>Номер группы</td><td>11-${student.groupNumber}</td></tr>
-            <#if student.competence??>
-                <tr><td>Компетенция</td><td>${student.competence}</td></tr>
-            </#if>
-            <#if student.teacher??>
-                <tr><td>Преподаватель</td><td>${student.teacher.surname} ${student.teacher.name} ${student.teacher.patronymic}</td></tr>
-            </#if>
-        </table>
+        <div class="col-md-12">
+            <p>Студент:
+                <#if student.state == "CONFIRMED">
+                    [Аккаунт подтвержден]
+                <#elseif student.state == "NOT_CONFIRMED">
+                    [Аккаунт не подтвержден]
+                <#elseif student.state == "REFUSED">
+                    [Аккаунту отказано в подтверждении]
+                </#if>
+            </p>
+            <table>
+                <tr><td>Фамилия: </td><td>${student.surname}</td></tr>
+                <tr><td>Имя: </td><td>${student.name}</td></tr>
+                <tr><td>Отчество: </td><td>${student.patronymic}</td></tr>
+                <tr><td>Курс: </td><td>${student.course}</td></tr>
+                <tr><td>Номер группы: </td><td>11-${student.groupNumber}</td></tr>
+                <#if student.competence??>
+                    <tr>
+                        <td>Компетенция: </td><td>${student.competence}
+                                <#if student.competenceState == "CONFIRMED">
+                                    [подтверждена]
+                                <#elseif student.competenceState == "NOT_CONFIRMED">
+                                    [не подтверждена]
+                                <#elseif student.competenceState == "REFUSED">
+                                    [отказано]
+                                </#if>
+                        </td>
+                    </tr>
+                </#if>
+                <#if student.teacherDto??>
+                    <tr><td>Преподаватель</td><td>${student.teacherDto.surname} ${student.teacherDto.name} ${student.teacherDto.patronymic}</td></tr>
+                </#if>
+            </table>
+            <a href="/student/home/edit">Редактировать профиль</a>
+        </div>
     </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
 </body>
 </html>

@@ -36,7 +36,6 @@ public class TeacherServiceImpl implements TeacherService {
     public List<TeacherDto> findConfirmedTeachers() {
         List<Teacher> confirmedTeachers = teacherRepository.findAllConfirmed();
         List<TeacherDto> dtoList = new LinkedList<>();
-
         for (Teacher teacher : confirmedTeachers) {
             dtoList.add(TeacherDto.castToDto(teacher));
         }
@@ -46,5 +45,10 @@ public class TeacherServiceImpl implements TeacherService {
 
     public List<TeacherDto> findAll() {
         return TeacherDto.from(teacherRepository.findAll());
+    }
+
+    @Override
+    public TeacherDto getTeacherOfStudent(StudentDto student) {
+        return getTeacherById(student.getTeacherDto().getId());
     }
 }
