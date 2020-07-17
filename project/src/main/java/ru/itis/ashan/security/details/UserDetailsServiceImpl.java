@@ -5,6 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.itis.ashan.entities.signIn.SignInDto;
 import ru.itis.ashan.entities.user.UserModel;
 import ru.itis.ashan.repositories.UserRepository;
@@ -22,6 +23,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private SignInRestService restService;
 
     @Override
+    @Transactional
     public UserDetails loadUserByUsername(String mail) throws UsernameNotFoundException {
         Optional<UserModel> userModelOptional = userRepository.findUserModelByMail(mail);
         if (userModelOptional.isPresent()){
