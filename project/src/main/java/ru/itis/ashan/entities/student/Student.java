@@ -6,7 +6,6 @@ import lombok.experimental.SuperBuilder;
 import ru.itis.ashan.entities.employer.Employer;
 import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.entities.teacher.Teacher;
-import ru.itis.ashan.entities.user.UserDto;
 import ru.itis.ashan.entities.user.UserModel;
 
 import javax.persistence.*;
@@ -49,7 +48,7 @@ public class Student extends UserModel {
     @Enumerated(value = EnumType.STRING)
     @Column(nullable = false)
     private CompetenceState competenceState;
-    @Column(length = 500)
+
     private String competence;
 
     public static Student castToModel(StudentDto studentDto){
