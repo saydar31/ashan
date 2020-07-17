@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.user.UserDto;
+import ru.itis.ashan.entities.user.UserModel;
 import ru.itis.ashan.services.AuthenticationService;
 import ru.itis.ashan.services.StudentService;
 import ru.itis.ashan.services.TagService;
@@ -32,10 +33,10 @@ public class StudentSelectionPageController {
                                   Authentication authentication) {
 
         List<StudentDto> students = null;
-        UserDto userDto = null;
+        UserModel userDto = null;
 
         if (authentication != null) {
-            userDto = authenticationService.getStudent(authentication);
+            userDto = authenticationService.getUserModel(authentication);
         }
 
         if (searchWord.equals("")) {

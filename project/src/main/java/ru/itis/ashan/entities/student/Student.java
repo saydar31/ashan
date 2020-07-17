@@ -3,6 +3,8 @@ package ru.itis.ashan.entities.student;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 import ru.itis.ashan.entities.employer.Employer;
 import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.entities.tag.Tag;
@@ -16,6 +18,8 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
+@EqualsAndHashCode(callSuper = false, exclude = {"employer","invitingEmployers","teacher"})
+@ToString(exclude = {"employer","invitingEmployers","teacher"})
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Student extends UserModel {
@@ -47,6 +51,9 @@ public class Student extends UserModel {
     @OneToOne
     private FileInfo mainPhoto;
 
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Set<Employer> invitingEmployers;
+
     @Enumerated(value = EnumType.STRING)
     @Column(nullable = false)
     private CompetenceState competenceState;
@@ -56,7 +63,8 @@ public class Student extends UserModel {
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Tag> tagSet;
 
-    public static Student castToModel(StudentDto studentDto){
+
+    public static Student castToModel(StudentDto studentDto) {
         return Student.builder()
                 .surname(studentDto.getSurname())
                 .name(studentDto.getName())
