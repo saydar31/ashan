@@ -18,10 +18,18 @@
             var name = $('#name').val();
             var surname = $('#surname').val();
             var patronymic = $('#patronymic').val();
-            var teacherId = $('#teacherId').val();
+            var teacherId = $('#inputState :selected').val();
             var competence = $('#competence').val();
+
+            var tag1Id = $('#tag_place_1 :selected').val();
+            var tag2Id = $('#tag_place_2 :selected').val();
+            var tag3Id = $('#tag_place_3 :selected').val();
+            var tag4Id = $('#tag_place_4 :selected').val();
+            var tag5Id = $('#tag_place_5 :selected').val();
+
             var data = {name: name, surname: surname, patronymic: patronymic, teacherId: teacherId,
-            competence: competence};
+            competence: competence, tag1Id : tag1Id, tag2Id : tag2Id, tag3Id : tag3Id,
+                tag4Id :tag4Id, tag5Id : tag5Id};
             $.ajax({
                 type: "POST",
                 url: "/student/edit",
@@ -34,6 +42,7 @@
                 }
             });
         }
+
     </script>
     <title>Edit profile</title>
 </head>
@@ -62,7 +71,7 @@
                             <div class="form-group">
                                 <label for="inputState">Преподаватель:</label>
                                 <select id="inputState" class="form-control">
-                                    <option selected>Не выбрано</option>
+                                    <option selected value="">Не выбрано</option>
                                     <#if teachers??>
                                         <#list teachers as teacher>
                                             <option id="teacherId" value="${teacher.id}">${teacher.surname} ${teacher.name} </option>
@@ -70,6 +79,55 @@
                                     </#if>
                                 </select>
                             </div>
+
+                            <div class="form-group">
+                                <select class="form-control tag_select" id="tag_place_1">
+                                    <option selected value="">Не выбрано</option>
+                                    <#if tags??>
+                                        <#list tags as tag>
+                                            <option id="tag_1" value="${tag.id}">${tag.tagName} </option>
+                                        </#list>
+                                    </#if>
+                                </select>
+
+                                <select class="form-control tag_select" id="tag_place_2">
+                                    <option selected value="">Не выбрано</option>
+                                    <#if tags??>
+                                        <#list tags as tag>
+                                            <option id="tag_2" value="${tag.id}">${tag.tagName} </option>
+                                        </#list>
+                                    </#if>
+                                </select>
+
+                                <select class="form-control tag_select" id="tag_place_3">
+                                    <option selected value="">Не выбрано</option>
+                                    <#if tags??>
+                                        <#list tags as tag>
+                                            <option id="tag_3" value="${tag.id}">${tag.tagName} </option>
+                                        </#list>
+                                    </#if>
+                                </select>
+
+                                <select class="form-control tag_select" id="tag_place_4">
+                                    <option selected value="">Не выбрано</option>
+                                    <#if tags??>
+                                        <#list tags as tag>
+                                            <option id="tag_4" value="${tag.id}">${tag.tagName} </option>
+                                        </#list>
+                                    </#if>
+                                </select>
+
+                                <select class="form-control tag_select" id="tag_place_5">
+                                    <option selected value="">Не выбрано</option>
+                                    <#if tags??>
+                                        <#list tags as tag>
+                                            <option id="tag_5"  value="${tag.id}">${tag.tagName} </option>
+                                        </#list>
+                                    </#if>
+                                </select>
+
+                            </div>
+
                             <div class="form-group competence">
                                 <label for="competence">О себе:</label>
                                 <#if student.competence??>

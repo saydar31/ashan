@@ -9,4 +9,10 @@ public class StudentEditForm {
     private String patronymic;
     private Long teacherId;
     private String competence;
+
+    private Long tag1Id;
+    private Long tag2Id;
+    private Long tag3Id;
+    private Long tag4Id;
+    private Long tag5Id;
 }

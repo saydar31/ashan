@@ -15,10 +15,8 @@ import ru.itis.ashan.entities.student.StudentEditForm;
 import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.teacher.TeacherDto;
 import ru.itis.ashan.security.details.UserDetailsImpl;
-import ru.itis.ashan.services.AuthenticationService;
-import ru.itis.ashan.services.FileService;
-import ru.itis.ashan.services.StudentService;
-import ru.itis.ashan.services.TeacherService;
+import ru.itis.ashan.services.*;
+
 import java.util.List;
 
 @Controller
@@ -36,6 +34,9 @@ public class StudentProfileController {
     @Autowired
     private AuthenticationService authenticationService;
 
+    @Autowired
+    private TagService tagService;
+
     @PreAuthorize("hasAuthority('STUDENT')")
     @GetMapping("/student/home")
     public String getHomePage(Authentication authentication, Model model){
@@ -50,6 +51,7 @@ public class StudentProfileController {
         StudentDto student = authenticationService.getStudent(authentication);
         model.addAttribute("student", student);
         model.addAttribute("teachers", teacherService.findConfirmedTeachers());
+        model.addAttribute("tags", tagService.getAllTags());
         return "student_edit_page";
     }
 
