@@ -10,9 +10,9 @@
 <body>
 <table>
     <tr><td>Фамилия:</td><td>${teacher.surname}</td></tr>
-    <tr>Имя:<td></td><td>${teacher.name}</td></tr>
-    <tr>Отчество:<td></td><td>${teacher.patronymic}</td></tr>
-    <tr>Почта:<td></td><td>${teacher.mail}</td></tr>
+    <tr><td>Имя:</td><td>${teacher.name}</td></tr>
+    <tr><td>Отчество:</td><td>${teacher.patronymic}</td></tr>
+    <tr><td>Почта:</td><td>${teacher.mail}</td></tr>
 </table>
 <ol>
     <#if teacher.studentDtoSet ??>

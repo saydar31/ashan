@@ -28,3 +28,7 @@ body {
 a, a:hover {
     color: white;
 }
+
+.competence {
+    width: 300%;
+}
