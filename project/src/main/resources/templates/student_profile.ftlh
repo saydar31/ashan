@@ -76,6 +76,13 @@
                 <#if student.teacherDto??>
                     <tr><td>Преподаватель</td><td>${student.teacherDto.surname} ${student.teacherDto.name} ${student.teacherDto.patronymic}</td></tr>
                 </#if>
+                <#if student.tagDtoSet?has_content>
+                    <tr><td>
+                        <#list student.tagDtoSet as tag>
+                            ${tag.tagName}
+                        </#list>
+                    </td></tr>
+                </#if>
             </table>
             <a href="/student/home/edit">Редактировать профиль</a>
         </div>

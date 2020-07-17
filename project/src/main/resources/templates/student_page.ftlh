@@ -51,6 +51,14 @@
             <#else>
                 <p>Место работы: не работает</p>
             </#if>
+
+            <#if student.tagDtoSet?has_content>
+                <p>
+                    <#list student.tagDtoSet as tag>
+                        ${tag.tagName}
+                    </#list>
+                </p>
+            </#if>
         </div>
     </div>
 </div>
