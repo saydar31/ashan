@@ -23,7 +23,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private SignInRestService restService;
 
     @Override
-    @Transactional
     public UserDetails loadUserByUsername(String mail) throws UsernameNotFoundException {
         Optional<UserModel> userModelOptional = userRepository.findUserModelByMail(mail);
         if (userModelOptional.isPresent()){
