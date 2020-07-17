@@ -54,3 +54,23 @@ Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIs
 }
 
 ###
+
+POST http://localhost:8080/api/admin/add_tag
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE
+
+{
+  "tagName": "java"
+}
+
+###
+
+POST http://localhost:8080/api/admin/delete_tag
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE
+
+{
+  "tagId": "1"
+}
+
+###

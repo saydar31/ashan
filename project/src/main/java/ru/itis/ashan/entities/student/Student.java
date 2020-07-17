@@ -5,11 +5,13 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 import ru.itis.ashan.entities.employer.Employer;
 import ru.itis.ashan.entities.fileInfo.FileInfo;
+import ru.itis.ashan.entities.tag.Tag;
 import ru.itis.ashan.entities.teacher.Teacher;
 import ru.itis.ashan.entities.user.UserDto;
 import ru.itis.ashan.entities.user.UserModel;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -51,6 +53,9 @@ public class Student extends UserModel {
     private CompetenceState competenceState;
     @Column(length = 500)
     private String competence;
+
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Set<Tag> tagSet;
 
     public static Student castToModel(StudentDto studentDto){
         return Student.builder()

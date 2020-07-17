@@ -19,7 +19,7 @@
 
 </head>
 <body>
-AdminId: ${admin.id}
+<h1>Admin Panel | <a href="/admin/tag_panel">Tag Panel</a></h1>
 
 <div>
     <button onclick="getNotConfirmedStudents('${admin.token}')">Студенты</button>
