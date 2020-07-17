@@ -8,16 +8,21 @@
     <title>Profile</title>
 </head>
 <body>
+<h3><a href="/teacher/home">Профиль</a> | <a href="/teacher/home/edit">Редактировать профиль</a> | <a href="/myStudents/competence/toConfirm">Список на подтверждение</a></h3>
 <table>
-    <tr><td>Фамилия:</td><td>${teacher.surname}</td></tr>
-    <tr>Имя:<td></td><td>${teacher.name}</td></tr>
-    <tr>Отчество:<td></td><td>${teacher.patronymic}</td></tr>
-    <tr>Почта:<td></td><td>${teacher.mail}</td></tr>
+    < <tr><td>Фамилия:</td><td>${teacher.surname}</td></tr>
+    <tr><td>Имя:</td><td>${teacher.name}</td></tr>
+    <tr><td>Отчество:</td><td>${teacher.patronymic}</td></tr>
+    <tr><td>Почта:</td><td>${teacher.mail}</td></tr>
+    <tr><td>Образование:</td><td><#if teacher.education?has_content>${teacher.education}</#if></td></tr>
+    <tr><td>Знание языков:</td><td><#if teacher.knowledgeOfLanguages?has_content>${teacher.knowledgeOfLanguages}</#if></td></tr>
+    <tr><td>Занимаемая должность:</td><td><#if teacher.positionHeld?has_content>${teacher.positionHeld}</#if></td></tr>
+    <tr><td>Дополнительная информация:</td><td><#if teacher.additionInformation?has_content>${teacher.additionInformation}</#if></td></tr>
 </table>
 <ol>
     <#if teacher.studentDtoSet ??>
         <#list teacher.studentDtoSet as student>
-            <li><a href="/student/${student.id}">${student.name} ${student.surname} 11-${student.groupNumber}, ${student.competence}</a></li>
+            <li><a href="/student/${student.id}">${student.name} ${student.surname} 11-${student.groupNumber}</a></li>
         </#list>
     </#if>
 </ol>

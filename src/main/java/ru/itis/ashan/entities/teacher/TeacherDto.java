@@ -30,11 +30,23 @@ public class TeacherDto extends UserDto {
 
     private Set<StudentDto> studentDtoSet;
 
+    private String education;
+    //занимаемая должность
+    private String positionHeld;
+    //знания языков
+    private String knowledgeOfLanguages;
+    //дополнительная информация
+    private String additionInformation;
+
     public static TeacherDto castToDto(Teacher teacher){
         TeacherDto teacherDto =  TeacherDto.builder()
                 .surname(teacher.getSurname())
                 .name(teacher.getName())
                 .patronymic(teacher.getPatronymic())
+                .education(teacher.getEducation())
+                .positionHeld(teacher.getPositionHeld())
+                .knowledgeOfLanguages(teacher.getKnowledgeOfLanguages())
+                .additionInformation(teacher.getAdditionInformation())
                 .mail(teacher.getMail())
                 .id(teacher.getId())
                 .role(teacher.getRole())
@@ -55,6 +67,10 @@ public class TeacherDto extends UserDto {
                 .surname(teacher.getSurname())
                 .name(teacher.getName())
                 .patronymic(teacher.getPatronymic())
+                .education(teacher.getEducation())
+                .positionHeld(teacher.getPositionHeld())
+                .knowledgeOfLanguages(teacher.getKnowledgeOfLanguages())
+                .additionInformation(teacher.getAdditionInformation())
                 .mail(teacher.getMail())
                 .id(teacher.getId())
                 .role(teacher.getRole())

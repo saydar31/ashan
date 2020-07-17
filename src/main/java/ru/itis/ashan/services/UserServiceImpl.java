@@ -16,7 +16,6 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public Optional<UserDto> findUserModelById(Long id) {
-
         Optional<UserModel> optionalUserModel = userRepository.findById(id);
         return optionalUserModel.map(UserDto::castToDto);
     }
