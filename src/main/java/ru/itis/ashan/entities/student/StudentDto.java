@@ -3,11 +3,15 @@ package ru.itis.ashan.entities.student;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import ru.itis.ashan.entities.employer.EmployerDto;
+import ru.itis.ashan.entities.tag.Tag;
+import ru.itis.ashan.entities.tag.TagDto;
 import ru.itis.ashan.entities.teacher.TeacherDto;
 import ru.itis.ashan.entities.user.UserDto;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Data
@@ -34,6 +38,8 @@ public class StudentDto extends UserDto {
 
     private String competence;
 
+    private Set<TagDto> tagDtoSet;
+
     public static StudentDto castToDto(Student student) {
         StudentDto studentDto = StudentDto.builder()
                 .surname(student.getSurname())
@@ -56,6 +62,15 @@ public class StudentDto extends UserDto {
         if(student.getTeacher() != null){
             studentDto.setTeacherDto(TeacherDto.getDto(student.getTeacher()));
         }
+
+        if (student.getTagSet() != null){
+            studentDto.setTagDtoSet(new HashSet<>());
+
+            for (Tag tag : student.getTagSet()){
+                studentDto.tagDtoSet.add(TagDto.getDto(tag));
+            }
+        }
+
         return studentDto;
     }
 

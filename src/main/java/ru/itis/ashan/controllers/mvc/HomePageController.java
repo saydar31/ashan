@@ -1,5 +1,6 @@
 package ru.itis.ashan.controllers.mvc;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
@@ -8,16 +9,19 @@ import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.user.Role;
 import ru.itis.ashan.entities.user.UserModel;
 import ru.itis.ashan.security.details.UserDetailsImpl;
+import ru.itis.ashan.services.AuthenticationService;
 
 @Controller
 public class HomePageController {
+
+    @Autowired
+    private AuthenticationService authenticationService;
 
     @PreAuthorize("isAuthenticated()")
     @GetMapping("/home")
     public String redirectToMyProfile(Authentication authentication) {
         if (authentication != null) {
-            UserDetailsImpl userDetail = (UserDetailsImpl) authentication.getPrincipal();
-            UserModel userModel = userDetail.getUser();
+            UserModel userModel = authenticationService.getUserModel(authentication);
             Role role = userModel.getRole();
 
             if (role.equals(Role.STUDENT)) {

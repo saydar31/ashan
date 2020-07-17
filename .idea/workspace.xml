@@ -1,284 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="72f12b8b-aef0-4385-9b0c-a25e5892934b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="357dee89-ec4c-42f2-8477-a08d0c795bde" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/.." value="competence_check" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1edYG7DewxXWKY56srhOUD13VNv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1elcUWxU2BAjAhVIDrE1DCCucJ5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="sqlite&#10;postgresql" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ajdar\Java\Ashan\ashan\project\src\main\resources\templates" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ru.itis.ashan.services" />
-    </key>
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn clean" />
-    </option>
-  </component>
-  <component name="RunManager" selected="Docker.dockerdir/Dockerfile">
-    <configuration name="AdminServiceTest.findAllNotConfirmedStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ashan" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.itis.ashan.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.itis.ashan.services" />
-      <option name="MAIN_CLASS_NAME" value="ru.itis.ashan.services.AdminServiceTest" />
-      <option name="METHOD_NAME" value="findAllNotConfirmedStudents" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AshanApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="ashan" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.itis.ashan.AshanApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dockerdir/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="imageTag" value="" />
-          <option name="buildCliOptions" value="" />
-          <option name="buildOnly" value="true" />
-          <option name="command" value="" />
-          <option name="containerName" value="" />
-          <option name="entrypoint" value="" />
-          <option name="commandLineOptions" value="" />
-          <option name="sourceFilePath" value="dockerdir/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Docker.dockerdir/Dockerfile" />
-        <item itemvalue="JUnit.AdminServiceTest.findAllNotConfirmedStudents" />
-      </list>
-    </recent_temporary>
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="72f12b8b-aef0-4385-9b0c-a25e5892934b" name="Default Changelist" comment="" />
-      <created>1594652837993</created>
+      <changelist id="357dee89-ec4c-42f2-8477-a08d0c795bde" name="Default Changelist" comment="" />
+      <created>1594899635390</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594652837993</updated>
-      <workItem from="1594652845582" duration="4643000" />
-      <workItem from="1594707889453" duration="10198000" />
-      <workItem from="1594739377281" duration="16124000" />
-      <workItem from="1594790855555" duration="8229000" />
-      <workItem from="1594802128046" duration="98000" />
-      <workItem from="1594802312116" duration="2185000" />
-      <workItem from="1594814408905" duration="1496000" />
-      <workItem from="1594817890642" duration="2479000" />
-      <workItem from="1594837726389" duration="1411000" />
+      <updated>1594899635390</updated>
+      <workItem from="1594899636819" duration="67000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/.." />
-    </ignored-roots>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="361" y="73" key="#Docker" timestamp="1594819282133">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="73" key="#Docker/0.0.1536.824@0.0.1536.824" timestamp="1594819282133" />
-    <state x="0" y="77" width="1533" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594813521114">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="0" y="77" width="1533" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594813521114" />
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1594795952589">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594795952589" />
-    <state x="350" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594710252577">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="350" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594710252577" />
-    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594797844091">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594797844091" />
-    <state x="491" y="2" key="#dockerdir/Dockerfile" timestamp="1594819287418">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="491" y="2" key="#dockerdir/Dockerfile/0.0.1536.824@0.0.1536.824" timestamp="1594819287418" />
-    <state x="550" y="169" key="FileChooserDialogImpl" timestamp="1594819280404">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="550" y="169" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594819280404" />
-    <state width="1493" height="263" key="GridCell.Tab.0.bottom" timestamp="1594819287497">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="263" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594819287497" />
-    <state width="1493" height="263" key="GridCell.Tab.0.center" timestamp="1594819287496">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="263" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594819287496" />
-    <state width="1493" height="263" key="GridCell.Tab.0.left" timestamp="1594819287495">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="263" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594819287495" />
-    <state width="1493" height="263" key="GridCell.Tab.0.right" timestamp="1594819287497">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="263" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594819287497" />
-    <state width="1493" height="33" key="GridCell.Tab.1.bottom" timestamp="1594818084002">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="33" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594818084002" />
-    <state width="1493" height="33" key="GridCell.Tab.1.center" timestamp="1594818084002">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="33" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594818084002" />
-    <state width="1493" height="33" key="GridCell.Tab.1.left" timestamp="1594818084002">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="33" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594818084002" />
-    <state width="1493" height="33" key="GridCell.Tab.1.right" timestamp="1594818084002">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="33" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594818084002" />
-    <state width="1493" height="46" key="GridCell.Tab.2.bottom" timestamp="1594803152664">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="46" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594803152664" />
-    <state width="1493" height="46" key="GridCell.Tab.2.center" timestamp="1594803152664">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="46" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1594803152664" />
-    <state width="1493" height="46" key="GridCell.Tab.2.left" timestamp="1594803152664">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="46" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1594803152664" />
-    <state width="1493" height="46" key="GridCell.Tab.2.right" timestamp="1594803152664">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="46" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1594803152664" />
-    <state x="279" y="58" key="SettingsEditor" timestamp="1594817907002">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594817907002" />
-    <state x="584" y="193" key="chooseDestDirectoryDialog" timestamp="1594653171903">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="584" y="193" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1594653171903" />
-    <state x="583" y="281" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1594715920113">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="583" y="281" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1594715920113" />
-    <state x="349" y="70" key="com.intellij.database.dbimport.ImportDialog" timestamp="1594798558117">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="349" y="70" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1594798558117" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1594817803077">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594817803077" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594796073688">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594796073688" />
   </component>
 </project>

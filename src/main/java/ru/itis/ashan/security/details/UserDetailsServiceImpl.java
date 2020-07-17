@@ -5,6 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.itis.ashan.entities.signIn.SignInDto;
 import ru.itis.ashan.entities.user.UserModel;
 import ru.itis.ashan.repositories.UserRepository;

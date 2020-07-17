@@ -3,6 +3,8 @@ package ru.itis.ashan.entities.employer;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.user.UserModel;
 
@@ -13,6 +15,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
+@EqualsAndHashCode(exclude = {"students","invitedStudents"},callSuper = false)
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Employer extends UserModel {
@@ -26,7 +29,10 @@ public class Employer extends UserModel {
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "employer")
     private Set<Student> students;
 
-    public static Employer castToModel(EmployerDto employer){
+    @ManyToMany(fetch = FetchType.EAGER,mappedBy = "invitingEmployers",cascade = {CascadeType.PERSIST})
+    private Set<Student> invitedStudents;
+
+    public static Employer castToModel(EmployerDto employer) {
         return Employer.builder()
                 .companyName(employer.getCompanyName())
                 .mail(employer.getMail())
