@@ -5,12 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Profile</title>
 </head>
 <body>
-<h3><a href="/teacher/home">Профиль</a> | <a href="/teacher/home/edit">Редактировать профиль</a> | <a href="/myStudents/competence/toConfirm">Список на подтверждение</a></h3>
+<#include "include/navbar.ftlh">
+<h3><a href="/teacher/home/edit">Редактировать профиль</a> | <a href="/myStudents/competence/toConfirm">Список на подтверждение</a></h3>
 <table>
-    < <tr><td>Фамилия:</td><td>${teacher.surname}</td></tr>
+    <tr><td>Фамилия:</td><td>${teacher.surname}</td></tr>
     <tr><td>Имя:</td><td>${teacher.name}</td></tr>
     <tr><td>Отчество:</td><td>${teacher.patronymic}</td></tr>
     <tr><td>Почта:</td><td>${teacher.mail}</td></tr>

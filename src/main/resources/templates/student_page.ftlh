@@ -108,77 +108,17 @@
             <#else>
                 <p>Место работы: не работает</p>
             </#if>
-    </div>
-    <div class="row">
-        <table>
-            <tr>
-                <td>Имя</td>
-                <td>${student.surname}</td>
-            </tr>
-            <tr>
-                <td>Фамилия</td>
-                <td>${student.name}</td>
-            </tr>
-            <tr>
-                <td>Отчество</td>
-                <td>${student.patronymic}</td>
-            </tr>
-            <tr>
-                <td>Курс</td>
-                <td>${student.course}</td>
-            </tr>
-            <tr>
-                <td>Номер группы</td>
-                <td>11-${student.groupNumber}</td>
-            </tr>
-            <#if student.competence??>
-                <tr>
-                    <td>Компетенция</td>
-                    <td>${student.competence}</td>
-                </tr>
-            </#if>
-            <#if student.teacherDto??>
-                <tr>
-                    <td>Преподаватель</td>
-                    <td>
-                        <a href="/teacher/${student.teacherDto.getId()}">${student.teacherDto.getSurname()} ${student.teacherDto.getName()}</a>
-                    </td>
-                </tr>
-            <#else>
-                <tr>
-                    <td>Преподаватель</td>
-                    <td> не выбран</td>
-                </tr>
-            </#if>
-        </table>
-    </div>
-    <#if student.employerDto?has_content>
-        <p>Место работы: <a href="/employerDto/${student.employerDto.getId()}">${student.employerDto.companyName}</a>
-        </p>
-    <#else>
-        <p>Место работы: не работает</p>
-    </#if>
-
-    <p>Компетенция:
-        <#if student.competenceState == "CONFIRMED">
-            [подтверждена]
-        <#elseif student.competenceState == "NOT_CONFIRMED">
-            [не подтверждена]
-        <#elseif student.competenceState == "REFUSED">
-            [отказано]
-        </#if>
-    </p>
-    <#if role?? && role== "EMPLOYER">
-        <button onclick="invite(${student.id})">пригласить</button>
-    </#if>
-            <#if student.tagDtoSet?has_content>
-                <p>
-                    <#list student.tagDtoSet as tag>
-                        ${tag.tagName}
-                    </#list>
-                </p>
-            </#if>
         </div>
+        <#if role?? && role== "EMPLOYER">
+            <button onclick="invite(${student.id})">пригласить</button>
+        </#if>
+        <#if student.tagDtoSet?has_content>
+            <p>
+                <#list student.tagDtoSet as tag>
+                    ${tag.tagName}
+                </#list>
+            </p>
+        </#if>
     </div>
 </div>
 

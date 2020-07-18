@@ -24,6 +24,7 @@
                 </#list>
             </#if>
         </table>
+        <a href="/home/employer/edit">Редактировать профиль</a>
     </div>
 </div>
 

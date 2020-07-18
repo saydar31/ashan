@@ -42,7 +42,7 @@
 <body>
 <ol>
     <#list interviewees as student>
-        <li><a>${student.name} ${student.surname} ${student.patronymic} 11-${student.groupNumber}</a> ${student.mail} <#if student.competence??>${student.competence}</#if><button onclick="accept(${student.id})">прошел</button><button onclick="refuse(${student.id})">использовал аоп для отправки писем в едиственном месте</button></li>
+        <li><a>${student.name} ${student.surname} ${student.patronymic} 11-${student.groupNumber}</a> ${student.mail} <#if student.competence??>${student.competence}</#if><button onclick="accept(${student.id})">Прошел</button><button onclick="refuse(${student.id})">Провалил</button></li>
     </#list>
 </ol>
 </body>
