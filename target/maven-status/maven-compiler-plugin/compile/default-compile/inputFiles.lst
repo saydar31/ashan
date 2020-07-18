@@ -68,6 +68,7 @@ C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\controllers\rest\Adm
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\entities\search\SearchDto.java
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\services\UserService.java
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\entities\employer\Employer.java
+C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\controllers\mvc\TeacherPersonalPageController.java
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\services\UserServiceImpl.java
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\entities\signIn\SignInDto.java
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\entities\tag\Tag.java
@@ -88,7 +89,6 @@ C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\repositories\Teacher
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\entities\fileInfo\FileInfo.java
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\security\configs\SecurityConfig.java
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\controllers\mvc\StudentProfileController.java
-C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\controllers\mvc\TeacherHomePageController.java
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\controllers\mvc\RootController.java
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\security\jwt\details\UserDetailsJwtImpl.java
 C:\Users\ajdar\Java\Ashan\ashan\src\main\java\ru\itis\ashan\services\email\MailSendingRunnableFactoryImpl.java

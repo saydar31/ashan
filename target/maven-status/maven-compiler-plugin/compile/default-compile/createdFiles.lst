@@ -27,12 +27,12 @@ ru\itis\ashan\services\TeacherService.class
 ru\itis\ashan\services\SignUpServiceImpl.class
 ru\itis\ashan\services\UserService.class
 ru\itis\ashan\controllers\mvc\StudentProfileController.class
-ru\itis\ashan\controllers\mvc\TeacherHomePageController.class
 ru\itis\ashan\services\IntervieweeListServiceImpl.class
 ru\itis\ashan\services\StudentService.class
 ru\itis\ashan\controllers\mvc\EmployerPageController.class
 ru\itis\ashan\AshanApplication.class
 ru\itis\ashan\entities\admin\AdminDto$AdminDtoBuilderImpl.class
+ru\itis\ashan\controllers\mvc\TeacherPersonalPageController.class
 ru\itis\ashan\controllers\mvc\CompetenceConfirmationPageController.class
 ru\itis\ashan\controllers\rest\AdminRestController.class
 ru\itis\ashan\entities\tag\TagDto.class
