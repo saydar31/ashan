@@ -1,12 +1,16 @@
 package ru.itis.ashan.controllers.mvc;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import ru.itis.ashan.entities.student.StudentDto;
+import ru.itis.ashan.entities.student.StudentEditForm;
+import ru.itis.ashan.entities.teacher.Teacher;
 import ru.itis.ashan.entities.teacher.TeacherDto;
 import ru.itis.ashan.entities.teacher.TeacherEditForm;
 import ru.itis.ashan.services.AuthenticationService;
