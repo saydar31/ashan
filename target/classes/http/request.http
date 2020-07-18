@@ -1,0 +1,76 @@
+POST http://localhost:8080/api/signIn
+Content-Type: application/json
+
+{
+  "mail": "2",
+  "password": "2"
+}
+
+###
+
+POST http://localhost:8080/api/test
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwibWFpbCI6IjIiLCJyb2xlIjoiVEVBQ0hFUiIsInN0YXRlIjoiTk9UX0NPTkZJUk1FRCJ9.J53RLdLnkIeHzkLRtWCRaguhyZKS_wTW4L_iUjvjw5U
+
+
+###
+
+POST http://localhost:8080/api/signIn
+Content-Type: application/json
+
+{
+  "mail": "alex@mail.ru",
+  "password": "1"
+}
+
+###
+
+GET http://localhost:8080/api/admin/not_confirmed_students
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE
+
+###
+
+GET http://localhost:8080/api/admin/not_confirmed_employers
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE
+
+###
+
+POST http://localhost:8080/api/admin/confirm_user
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE
+
+{
+  "id": "1"
+}
+
+###
+
+POST http://localhost:8080/api/admin/refuse_user
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE
+
+{
+  "id": "1"
+}
+
+###
+
+POST http://localhost:8080/api/admin/add_tag
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE
+
+{
+  "tagName": "java"
+}
+
+###
+
+POST http://localhost:8080/api/admin/delete_tag
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwibWFpbCI6ImFsZXhAbWFpbC5ydSIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIn0.zN04POFTVc6HPEHm_LDoVf43x_kWyj0k6NJwE2I3FZE
+
+{
+  "tagId": "1"
+}
+
+###
