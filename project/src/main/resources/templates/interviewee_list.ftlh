@@ -19,7 +19,9 @@
                         xhr.setRequestHeader(header,token)
                     }
                 }
-            )
+            ).done(function () {
+                $('#student'+id+'buttons').html('')
+            })
         }
 
         function accept(id) {
@@ -35,14 +37,16 @@
                         xhr.setRequestHeader(header,token)
                     }
                 }
-            )
+            ).done(function () {
+                $('#student'+id+'buttons').html('')
+            })
         }
     </script>
 </head>
 <body>
 <ol>
     <#list interviewees as student>
-        <li><a>${student.name} ${student.surname} ${student.patronymic} 11-${student.groupNumber}</a> ${student.mail} <#if student.competence??>${student.competence}</#if><button onclick="accept(${student.id})">прошел</button><button onclick="refuse(${student.id})">использовал аоп для отправки писем в едиственном месте</button></li>
+        <li><a>${student.name} ${student.surname} ${student.patronymic} 11-${student.groupNumber}</a> ${student.mail} <#if student.competence??>${student.competence}</#if><span id="student${student.id}buttons"><button onclick="accept(${student.id})">прошел</button><button onclick="refuse(${student.id})">провалил</button></span></li>
     </#list>
 </ol>
 </body>

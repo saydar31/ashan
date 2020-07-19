@@ -20,7 +20,9 @@
                     xhr.setRequestHeader(header,token)
                 }
             }
-        )
+        ).done(function () {
+            $('#student'+id+'buttons').html('')
+        })
     }
 
     function refuse(id) {
@@ -36,17 +38,19 @@
                     xhr.setRequestHeader(header,token)
                 }
             }
-        )
+        ).done(function () {
+            $('#student'+id+'buttons').html('')
+        })
     }
 </script>
 <body>
 <h3><a href="/teacher/home">Профиль</a> | <a href="/teacher/home/edit">Редактировать профиль</a> | <a href="/myStudents/competence/toConfirm">Список на подтверждение</a></h3>
-<ol>
+<ul>
     <#if students?size != 0>
         <#list students as student>
-            <li><a href="/student/${student.id}">${student.name} ${student.surname} 11-${student.groupNumber}, ${student.competence}</a>, <button onclick="confirm('${student.id}')">confirm</button> <button onclick="refuse('${student.id}')">refuse</button></li>
+            <li id="student${student.id}"><a href="/student/${student.id}">${student.name} ${student.surname} 11-${student.groupNumber}, ${student.competence}</a> <span id="student${student.id}buttons"><button onclick="confirm('${student.id}')">confirm</button> <button onclick="refuse('${student.id}')">refuse</button></span></li>
         </#list>
     </#if>
-</ol>
+</ul>
 </body>
 </html>
