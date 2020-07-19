@@ -27,13 +27,13 @@ public class EmployerRepositoryTest {
                 .companyName("com")
                 .hashPassword("assxs")
                 .role(Role.EMPLOYER)
-                .state(State.CONFIRMED)
+                .state(State.NOT_CONFIRMED)
                 .phoneNumber("888")
                 .mail("com@com.com")
                 .emailIsConfirmed(true)
                 .build();
         employerRepository.save(employer);
-       List<Employer> employers= employerRepository.findAll();
-        System.out.println("test");
+        List<Employer> employers = employerRepository.findAllNotConfirmed();
+        assert employers.size()>0;
     }
 }
