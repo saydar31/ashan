@@ -8,12 +8,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.student.StudentEditForm;
 import ru.itis.ashan.entities.teacher.Teacher;
 import ru.itis.ashan.entities.teacher.TeacherDto;
 import ru.itis.ashan.entities.teacher.TeacherEditForm;
 import ru.itis.ashan.services.AuthenticationService;
+import ru.itis.ashan.services.FileService;
 import ru.itis.ashan.services.StudentService;
 import ru.itis.ashan.services.TeacherService;
 
@@ -25,6 +27,9 @@ public class TeacherHomePageController {
 
     @Autowired
     private StudentService studentService;
+
+    @Autowired
+    private FileService fileService;
 
     @Autowired
     private TeacherService teacherService;
@@ -49,8 +54,13 @@ public class TeacherHomePageController {
     @PostMapping("/teacher/edit")
     @PreAuthorize("hasAuthority('TEACHER')")
     public String editProfile(Authentication authentication, TeacherEditForm teacherEditForm) {
-        TeacherDto teacher = authenticationService.getTeacher(authentication);
-        teacherService.editTeacher(teacher.getId(), teacherEditForm);
+        Teacher teacher = (Teacher) authenticationService.getUserModel(authentication);
+
+        FileInfo fileInfo = null;
+        if(!teacherEditForm.getImage().isEmpty()){
+            fileInfo = fileService.save(teacherEditForm.getImage(), teacher);
+        }
+        teacherService.editTeacher(teacher.getId(), teacherEditForm, fileInfo);
         return "redirect:/teacher/home/edit";
     }
 }

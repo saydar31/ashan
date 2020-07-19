@@ -3,6 +3,7 @@ package ru.itis.ashan.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.entities.student.CompetenceState;
 import ru.itis.ashan.entities.student.StudentEditForm;
 import ru.itis.ashan.entities.student.Student;
@@ -65,7 +66,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public void editStudent(Long id, StudentEditForm studentEditForm) {
+    public void editStudent(Long id, StudentEditForm studentEditForm, FileInfo fileInfo) {
         Student student = studentRepository.getOne(id);
         student.setName(studentEditForm.getName());
         student.setSurname(studentEditForm.getSurname());
@@ -81,6 +82,11 @@ public class StudentServiceImpl implements StudentService {
         }
         student.setTeacher(getTeacher(studentEditForm.getTeacherId()));
         student.setTagSet(createTagSet(studentEditForm));
+
+        if(fileInfo != null){
+            student.setMainPhoto(fileInfo);
+        }
+
         studentRepository.save(student);
     }
 

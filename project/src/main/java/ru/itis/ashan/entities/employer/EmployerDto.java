@@ -2,6 +2,7 @@ package ru.itis.ashan.entities.employer;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.user.UserDto;
@@ -32,6 +33,7 @@ public class EmployerDto extends UserDto {
                 .mail(employer.getMail())
                 .role(employer.getRole())
                 .state(employer.getState())
+                .mainPhotoId(FileInfo.getId(employer.getMainPhoto()))
                 .build();
     }
 
@@ -44,6 +46,7 @@ public class EmployerDto extends UserDto {
                 .mail(employer.getMail())
                 .role(employer.getRole())
                 .state(employer.getState())
+                .mainPhotoId(FileInfo.getId(employer.getMainPhoto()))
                 .build();
         employerDto.studentDtoSet = new HashSet<>();
 

@@ -1,5 +1,6 @@
 package ru.itis.ashan.services;
 
+import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.student.StudentEditForm;
 import ru.itis.ashan.entities.teacher.TeacherDto;
@@ -13,6 +14,6 @@ public interface TeacherService {
     TeacherDto getTeacherById(Long id);
     List<TeacherDto> findAll();
     TeacherDto getTeacherOfStudent(StudentDto student);
-    void editTeacher(Long id, TeacherEditForm teacherEditForm);
+    void editTeacher(Long id, TeacherEditForm teacherEditForm, FileInfo fileInfo);
 }
 
