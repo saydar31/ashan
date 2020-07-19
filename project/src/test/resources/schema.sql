@@ -107,6 +107,7 @@ create table user_model
     mail          varchar(255) not null,
     role          varchar(255) not null,
     state         varchar(255) not null,
+    email_is_confirmed boolean not null,
     primary key (id)
 );
 alter table if exists tag
