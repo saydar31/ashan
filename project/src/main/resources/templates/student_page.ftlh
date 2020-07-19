@@ -3,17 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
-
-
     <meta name="_csrf" content="${_csrf.token}"/>
     <meta name="_csrf_header" content="${_csrf.headerName}"/>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <script>
         function sendFile() {
@@ -68,8 +61,11 @@
 <#include "include/navbar.ftlh">
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-10">
-            <p>Студент
+        <div class="col-2">
+            <img src="/static/images/80W8ByCuhcQ.jpeg" class="img-thumbnail">
+        </div>
+        <div class="col-10">
+            <p>Статус:
                 <#if student.state == "CONFIRMED">
                     [Аккаунт подтвержден]
                 <#elseif student.state == "NOT_CONFIRMED">
@@ -79,14 +75,14 @@
                 </#if>
             </p>
             <table>
-                <tr><td>Фамилия: </td><td>${student.surname}</td></tr>
-                <tr><td>Имя: </td><td>${student.name}</td></tr>
-                <tr><td>Отчество: </td><td>${student.patronymic}</td></tr>
-                <tr><td>Курс: </td><td>${student.course}</td></tr>
-                <tr><td>Номер группы: </td><td>11-${student.groupNumber}</td></tr>
+                <tr><td><b>Фамилия: </b></td><td>${student.surname}</td></tr>
+                <tr><td><b>Имя: </b></td><td>${student.name}</td></tr>
+                <tr><td><b>Отчество: </b></td><td>${student.patronymic}</td></tr>
+                <tr><td><b>Курс: </b></td><td>${student.course}</td></tr>
+                <tr><td><b>Номер группы: </b></td><td>11-${student.groupNumber}</td></tr>
                 <#if student.competence??>
                     <tr>
-                        <td>О себе: </td><td>${student.competence}
+                        <td><b>Компетенция: </b></td><td>${student.competence}
                             <#if student.competenceState == "CONFIRMED">
                                 [подтверждена]
                             <#elseif student.competenceState == "NOT_CONFIRMED">
@@ -98,85 +94,28 @@
                     </tr>
                 </#if>
                 <#if student.teacherDto??>
-                    <tr><td>Преподаватель: </td><td><a href="/teacher/${student.teacherDto.getId()}">${student.teacherDto.getSurname()} ${student.teacherDto.getName()}</a></td></tr>
+                    <tr><td><b>Преподаватель: </b></td><td><a href="/teacher/${student.teacherDto.getId()}">${student.teacherDto.getSurname()} ${student.teacherDto.getName()}</a></td></tr>
                 <#else>
-                    <tr><td>Преподаватель: </td><td> не выбран</td></tr>
+                    <tr><td><b>Преподаватель: </b></td><td> не выбран</td></tr>
+                </#if>
+                <#if student.employerDto?has_content>
+                    <tr><td><b>Место работы: </b></td><td><a href="/employer/${student.employerDto.getId()}">${student.employerDto.companyName}</a></td></tr>
+                <#else>
+                    <tr><td><b>Место работы: </b></td><td>не работает</td></tr>
+                </#if>
+
+                <#if student.tagDtoSet?has_content>
+                    <tr><td><b>Теги: </b></td>
+                        <td>
+                            <#list student.tagDtoSet as tag>
+                                #${tag.tagName}
+                            </#list>
+                        </td>
+                    </tr>
                 </#if>
             </table>
-            <#if student.employerDto?has_content>
-                <p>Место работы: <a href="/employerDto/${student.employerDto.getId()}">${student.employerDto.companyName}</a></p>
-            <#else>
-                <p>Место работы: не работает</p>
-            </#if>
-    </div>
-    <div class="row">
-        <table>
-            <tr>
-                <td>Имя</td>
-                <td>${student.surname}</td>
-            </tr>
-            <tr>
-                <td>Фамилия</td>
-                <td>${student.name}</td>
-            </tr>
-            <tr>
-                <td>Отчество</td>
-                <td>${student.patronymic}</td>
-            </tr>
-            <tr>
-                <td>Курс</td>
-                <td>${student.course}</td>
-            </tr>
-            <tr>
-                <td>Номер группы</td>
-                <td>11-${student.groupNumber}</td>
-            </tr>
-            <#if student.competence??>
-                <tr>
-                    <td>Компетенция</td>
-                    <td>${student.competence}</td>
-                </tr>
-            </#if>
-            <#if student.teacherDto??>
-                <tr>
-                    <td>Преподаватель</td>
-                    <td>
-                        <a href="/teacher/${student.teacherDto.getId()}">${student.teacherDto.getSurname()} ${student.teacherDto.getName()}</a>
-                    </td>
-                </tr>
-            <#else>
-                <tr>
-                    <td>Преподаватель</td>
-                    <td> не выбран</td>
-                </tr>
-            </#if>
-        </table>
-    </div>
-    <#if student.employerDto?has_content>
-        <p>Место работы: <a href="/employerDto/${student.employerDto.getId()}">${student.employerDto.companyName}</a>
-        </p>
-    <#else>
-        <p>Место работы: не работает</p>
-    </#if>
-
-    <p>Компетенция:
-        <#if student.competenceState == "CONFIRMED">
-            [подтверждена]
-        <#elseif student.competenceState == "NOT_CONFIRMED">
-            [не подтверждена]
-        <#elseif student.competenceState == "REFUSED">
-            [отказано]
-        </#if>
-    </p>
-    <#if role?? && role== "EMPLOYER">
-        <button onclick="invite(${student.id})">пригласить</button>
-    </#if>
-            <#if student.tagDtoSet?has_content>
-                <p>
-                    <#list student.tagDtoSet as tag>
-                        ${tag.tagName}
-                    </#list>
-                </p>
+            <#if role?? && role== "EMPLOYER">
+                <button class="btn btn-secondary" onclick="invite(${student.id})">Пригласить на собеседование</button>
             </#if>
         </div>
     </div>

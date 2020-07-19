@@ -44,8 +44,12 @@
 <#include "include/navbar.ftlh">
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
-            <p>Студент:
+        <div class="col-2">
+            <img src="/static/images/80W8ByCuhcQ.jpeg" class="img-thumbnail">
+            <a href="/student/home/edit">Редактировать профиль</a>
+        </div>
+        <div class="col-10">
+            <p>Статус:
                 <#if student.state == "CONFIRMED">
                     [Аккаунт подтвержден]
                 <#elseif student.state == "NOT_CONFIRMED">
@@ -55,14 +59,14 @@
                 </#if>
             </p>
             <table>
-                <tr><td>Фамилия: </td><td>${student.surname}</td></tr>
-                <tr><td>Имя: </td><td>${student.name}</td></tr>
-                <tr><td>Отчество: </td><td>${student.patronymic}</td></tr>
-                <tr><td>Курс: </td><td>${student.course}</td></tr>
-                <tr><td>Номер группы: </td><td>11-${student.groupNumber}</td></tr>
+                <tr><td><b>Фамилия: </b></td><td>${student.surname}</td></tr>
+                <tr><td><b>Имя: </b></td><td>${student.name}</td></tr>
+                <tr><td><b>Отчество: </b></td><td>${student.patronymic}</td></tr>
+                <tr><td><b>Курс: </b></td><td>${student.course}</td></tr>
+                <tr><td><b>Номер группы: </b></td><td>11-${student.groupNumber}</td></tr>
                 <#if student.competence??>
                     <tr>
-                        <td>Компетенция: </td><td>${student.competence}
+                        <td><b>Информация о себе:</b></td><td>${student.competence}
                                 <#if student.competenceState == "CONFIRMED">
                                     [подтверждена]
                                 <#elseif student.competenceState == "NOT_CONFIRMED">
@@ -74,17 +78,18 @@
                     </tr>
                 </#if>
                 <#if student.teacherDto??>
-                    <tr><td>Преподаватель</td><td>${student.teacherDto.surname} ${student.teacherDto.name} ${student.teacherDto.patronymic}</td></tr>
+                    <tr><td><b>Преподаватель: </b></td><td><a href="/teacher/${student.teacherDto.getId()}">${student.teacherDto.surname} ${student.teacherDto.name} ${student.teacherDto.patronymic}</td></tr>
                 </#if>
                 <#if student.tagDtoSet?has_content>
-                    <tr><td>
+                    <tr><td><b>Теги: </b></td>
+                    <td>
                         <#list student.tagDtoSet as tag>
-                            ${tag.tagName}
+                            #${tag.tagName}
                         </#list>
                     </td></tr>
                 </#if>
             </table>
-            <a href="/student/home/edit">Редактировать профиль</a>
+
         </div>
     </div>
 </div>
