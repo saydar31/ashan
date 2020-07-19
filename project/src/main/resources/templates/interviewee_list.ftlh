@@ -22,7 +22,10 @@
                         xhr.setRequestHeader(header,token)
                     }
                 }
-            )
+            ).done(function () {
+                $('#student'+id+'confirm').html('');
+                $('#student'+id+'refuse').html('');
+            })
         }
 
         function accept(id) {
@@ -38,7 +41,10 @@
                         xhr.setRequestHeader(header,token)
                     }
                 }
-            )
+            ).done(function () {
+                $('#student'+id+'confirm').html('');
+                $('#student'+id+'refuse').html('');
+            })
         }
     </script>
     <title>Студенты, приглашенные на собеседование</title>
@@ -80,8 +86,8 @@
                 <tr>
                     <td><a href="/student/${student.id}">${student.surname} ${student.name} ${student.patronymic}</a></td>
                     <td>11-${student.groupNumber}</td>
-                    <td><button class="btn btn-secondary" onclick="confirm('${student.id}')">Прошел</button></td>
-                    <td><button class="btn btn-secondary" onclick="refuse('${student.id}')">Провалил</button></td>
+                    <td><span id="student${student.id}confirm"><button class="btn btn-secondary" onclick="confirm('${student.id}')">Прошел</button></span></td>
+                    <td><span id="student${student.id}refuse"><button class="btn btn-secondary" onclick="refuse('${student.id}')">Провалил</button></span> </td>
                 </tr>
             </#list>
             </tbody>
