@@ -1,6 +1,7 @@
 package ru.itis.ashan.entities.teacher;
 
 import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
 
 @Data
 public class TeacherEditForm {
@@ -18,4 +19,6 @@ public class TeacherEditForm {
     private String knowledgeOfLanguages;
     //дополнительная информация
     private String additionInformation;
+
+    private MultipartFile image;
 }

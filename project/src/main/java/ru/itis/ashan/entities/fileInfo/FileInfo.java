@@ -5,7 +5,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import ru.itis.ashan.entities.user.UserModel;
+
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 
 @Builder
@@ -14,7 +16,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Entity
 @Table(name = "fileInfo")
-public class FileInfo {
+public class FileInfo implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,12 +38,17 @@ public class FileInfo {
     @Column(name = "type")
     private String type;
 
-    @Column(name = "url")
-    private String url;
-
     @Column(name = "created_at")
     private LocalDate createdAt;
 
-    @OneToOne
+    @OneToOne(mappedBy = "mainPhoto")
     private UserModel user;
+
+    public static Long getId(FileInfo fileInfo) {
+
+        if (fileInfo == null) {
+            return null;
+        }
+        return fileInfo.getId();
+    }
 }

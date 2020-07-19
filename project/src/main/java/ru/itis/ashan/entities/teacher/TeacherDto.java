@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
+import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.user.UserDto;
@@ -51,6 +52,7 @@ public class TeacherDto extends UserDto {
                 .id(teacher.getId())
                 .role(teacher.getRole())
                 .state(teacher.getState())
+                .mainPhotoId(FileInfo.getId(teacher.getMainPhoto()))
                 .build();
         if(teacher.getStudents() != null) {
             teacherDto.setStudentDtoSet(new HashSet<>());
@@ -75,6 +77,7 @@ public class TeacherDto extends UserDto {
                 .id(teacher.getId())
                 .role(teacher.getRole())
                 .state(teacher.getState())
+                .mainPhotoId(FileInfo.getId(teacher.getMainPhoto()))
                 .build();
     }
 

@@ -3,6 +3,7 @@ package ru.itis.ashan.entities.student;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import ru.itis.ashan.entities.employer.EmployerDto;
+import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.entities.tag.Tag;
 import ru.itis.ashan.entities.tag.TagDto;
 import ru.itis.ashan.entities.teacher.TeacherDto;
@@ -53,6 +54,7 @@ public class StudentDto extends UserDto {
                 .state(student.getState())
                 .role(student.getRole())
                 .competence(student.getCompetence())
+                .mainPhotoId(FileInfo.getId(student.getMainPhoto()))
                 .build();
 
         if(student.getEmployer() != null){
@@ -89,6 +91,7 @@ public class StudentDto extends UserDto {
                 .mail(student.getMail())
                 .state(student.getState())
                 .role(student.getRole())
+                .mainPhotoId(FileInfo.getId(student.getMainPhoto()))
                 .build();
     }
 

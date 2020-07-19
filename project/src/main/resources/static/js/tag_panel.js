@@ -65,15 +65,24 @@ function deleteRows(tagId) {
 }
 
 function addNewRow(tagId, tagName) {
-    let newLi = $("<li/>")
-    newLi.attr('id', "tag_" + tagId);
-    newLi.text(tagName + " ");
+    let newTr = $("<tr/>")
+    newTr.attr('id', "tag_" + tagId);
+
     let newButton = $("<button/>");
     newButton.click(function () {
         deleteTag(tagId);
     });
+    newButton.attr("class", "btn btn-secondary")
     newButton.text("удалить");
-    newLi.append(newButton);
 
-    $("#tag_list").prepend(newLi);
+    let td1 = $("<td/>")
+    let td2 = $("<td/>")
+
+    td1.text(tagName);
+    td2.append(newButton)
+
+    newTr.append(td1);
+    newTr.append(td2);
+
+    $("#tag_list").prepend(newTr);
 }

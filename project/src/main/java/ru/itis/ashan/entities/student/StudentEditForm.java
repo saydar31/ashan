@@ -1,6 +1,7 @@
 package ru.itis.ashan.entities.student;
 
 import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
 
 @Data
 public class StudentEditForm {
@@ -9,6 +10,8 @@ public class StudentEditForm {
     private String patronymic;
     private Long teacherId;
     private String competence;
+
+    private MultipartFile image;
 
     private Long tag1Id;
     private Long tag2Id;
