@@ -31,6 +31,9 @@ public class SignUpServiceImpl implements SignUpService{
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    @Autowired
+    WelcomeLetterService welcomeLetterService;
+
 
     @Override
     public void signUpStudent(SignUpStudentDto form) {
@@ -46,8 +49,8 @@ public class SignUpServiceImpl implements SignUpService{
                 .role(Role.STUDENT)
                 .state(State.NOT_CONFIRMED)
                 .build();
-
         studentRepository.save(student);
+        welcomeLetterService.sendWelcomeLetter(student);
     }
 
     @Override
@@ -63,6 +66,7 @@ public class SignUpServiceImpl implements SignUpService{
                 .build();
 
         teacherRepository.save(teacher);
+        welcomeLetterService.sendWelcomeLetter(teacher);
     }
 
     @Override
@@ -77,5 +81,6 @@ public class SignUpServiceImpl implements SignUpService{
                 .build();
 
         employerRepository.save(employer);
+        welcomeLetterService.sendWelcomeLetter(employer);
     }
 }
