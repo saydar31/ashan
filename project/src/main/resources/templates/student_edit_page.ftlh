@@ -80,7 +80,7 @@
             eventId.addEventListener('change', handleFileSelect, false);
         }
     </script>
-    <title>Редактирование профиля студента</title>
+
 </head>
 <body>
 <#include "include/navbar.ftlh">
@@ -223,6 +223,7 @@
                                     </#if>
                                 </select>
                             </div>
+
                             <div class="form-group">
                                 <span id="output">
                                     <#if student.mainPhotoId?has_content>
@@ -236,6 +237,7 @@
                                            placeholder="Имя файла..."/>
                                 </p>
                             </div>
+
                             <div class="form-group competence">
                                 <label for="competence">О себе:</label>
                                 <#if student.competence??>
@@ -244,7 +246,9 @@
                                     <input type="text" class="form-control" name="competence" id="competence"/>
                                 </#if>
                             </div>
+
                             <input class="btn btn-secondary" type="submit" value="Сохранить">
+
                         </div>
                         <hr>
                     </div>

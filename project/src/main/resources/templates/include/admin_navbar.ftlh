@@ -6,7 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/students">Поиск студентов</a>
+                <a class="nav-link" href="/admin/tag_panel">Панель тегов</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/home">Личный кабинет</a>
