@@ -33,11 +33,14 @@ public class UserModel implements Serializable {
     @Column(nullable = false)
     private State state;
 
+    @Column(nullable = false)
+    private boolean emailIsConfirmed;
+
     //хранит токен для rest запросов
     @Transient
     private String token;
 
-    public static UserModel castToModel(UserDto userDto){
+    public static UserModel castToModel(UserDto userDto) {
         return UserModel.builder()
                 .hashPassword(userDto.getPassword())
                 .id(userDto.getId())
