@@ -20,7 +20,7 @@ import ru.itis.ashan.services.StudentService;
 import ru.itis.ashan.services.TeacherService;
 
 @Controller
-public class TeacherHomePageController {
+public class TeacherPersonalPageController {
 
     @Autowired
     private AuthenticationService authenticationService;
