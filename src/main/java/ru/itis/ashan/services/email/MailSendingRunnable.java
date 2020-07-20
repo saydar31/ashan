@@ -5,7 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 
-import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
 @AllArgsConstructor
@@ -26,8 +25,8 @@ public class MailSendingRunnable implements Runnable {
             mimeMessageHelper.setSubject(mail.getSubject());
             mimeMessageHelper.setText(mail.getContent(),true);
             javaMailSender.send(mimeMessage);
-        } catch (MessagingException messagingException) {
-            log.error(messagingException.getCause().getMessage());
+        } catch (Exception exception) {
+            log.error(exception.getMessage());
         }
     }
 }

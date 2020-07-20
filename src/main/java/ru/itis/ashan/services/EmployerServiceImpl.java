@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 import ru.itis.ashan.entities.employer.Employer;
 import ru.itis.ashan.entities.employer.EmployerDto;
 import ru.itis.ashan.entities.employer.EmployerEditDto;
+import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.exceptions.UserNotFoundException;
 import ru.itis.ashan.repositories.EmployerRepository;
 
@@ -26,9 +27,13 @@ public class EmployerServiceImpl implements EmployerService {
     }
 
     @Override
-    public void edit(Employer employer, EmployerEditDto employerEditDto) {
+    public void edit(Employer employer, EmployerEditDto employerEditDto, FileInfo fileInfo) {
         employer.setCompanyName(employerEditDto.getCompanyName());
         employer.setPhoneNumber(employerEditDto.getPhoneNumber());
+
+        if (fileInfo != null) {
+            employer.setMainPhoto(fileInfo);
+        }
         employerRepository.save(employer);
     }
 }

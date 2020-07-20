@@ -15,6 +15,11 @@ body, .navbar-light{
     border-color: #b07aff!important;
 }
 
+.active-purple-4 input[type=text]:focus:not([readonly]) {
+    border: 1px solid #ce93d8;
+    box-shadow: 0 0 0 1px #ce93d8;
+}
+
 html,
 body {
     height: 100%;
@@ -22,13 +27,50 @@ body {
 
 .btn, label{
     font-size: 15px;
-    margin-bottom: 0.0rem;
+    margin-bottom: 0rem;
 }
 
 a, a:hover {
-    color: white;
+    color: black;
+    font-weight: 600;
 }
 
 .competence {
     width: 300%;
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+.container-fluid {
+    padding-left: 40px;
+}
+
+.table td{
+    padding: 0.0em;
+    vertical-align: unset;
+    width: 75%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.my-btn {
+    width: 32%;
+    margin-bottom: 1em;
+}
+
+.my-table td{
+    width: auto;
+    text-align: center;
+}
+
+.form-inline {
+    margin-bottom: 1.5%;
+}
+
+.card-body {
+    text-align: center;
 }

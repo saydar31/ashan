@@ -48,9 +48,6 @@ public class Student extends UserModel {
     @JoinColumn(name = "employer_id")
     private Employer employer;
 
-    @OneToOne
-    private FileInfo mainPhoto;
-
     @ManyToMany(fetch = FetchType.EAGER)
     private Set<Employer> invitingEmployers;
 

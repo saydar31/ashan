@@ -2,6 +2,7 @@ package ru.itis.ashan.entities.user;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import ru.itis.ashan.entities.fileInfo.FileInfo;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -33,11 +34,20 @@ public class UserModel implements Serializable {
     @Column(nullable = false)
     private State state;
 
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "photo_id")
+    private FileInfo mainPhoto;
+
+    @Column(nullable = false)
+    private boolean emailIsConfirmed;
+
+
     //хранит токен для rest запросов
     @Transient
     private String token;
 
-    public static UserModel castToModel(UserDto userDto){
+    public static UserModel castToModel(UserDto userDto) {
         return UserModel.builder()
                 .hashPassword(userDto.getPassword())
                 .id(userDto.getId())

@@ -2,6 +2,7 @@ package ru.itis.ashan.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.entities.student.Student;
 import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.teacher.Teacher;
@@ -54,7 +55,7 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
-    public void editTeacher(Long id, TeacherEditForm teacherEditForm) {
+    public void editTeacher(Long id, TeacherEditForm teacherEditForm, FileInfo fileInfo) {
         Teacher teacher = teacherRepository.getOne(id);
         teacher.setName(teacherEditForm.getName());
         teacher.setSurname(teacherEditForm.getSurname());
@@ -64,6 +65,10 @@ public class TeacherServiceImpl implements TeacherService {
         teacher.setKnowledgeOfLanguages(teacherEditForm.getKnowledgeOfLanguages());
         teacher.setEducation(teacherEditForm.getEducation());
         teacher.setAdditionInformation(teacherEditForm.getAdditionInformation());
+
+        if (fileInfo != null){
+            teacher.setMainPhoto(fileInfo);
+        }
 
         teacherRepository.save(teacher);
     }

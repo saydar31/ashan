@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+import ru.itis.ashan.entities.fileInfo.FileInfo;
 import ru.itis.ashan.entities.student.StudentDto;
 import ru.itis.ashan.entities.student.StudentEditForm;
 import ru.itis.ashan.entities.student.Student;
@@ -56,20 +57,17 @@ public class StudentProfileController {
     }
 
     @PostMapping("/student/edit")
-    public ResponseEntity<Object> editProfile(Authentication authentication, StudentEditForm studentEditForm) {
+    @PreAuthorize("hasAuthority('STUDENT')")
+    public String editProfile(Authentication authentication, StudentEditForm studentEditForm) {
+
         StudentDto student = authenticationService.getStudent(authentication);
-        studentService.editStudent(student.getId(), studentEditForm);
-        return ResponseEntity.ok().build();
+
+        FileInfo fileInfo = null;
+        if(!studentEditForm.getImage().isEmpty()){
+            fileInfo = fileService.save(studentEditForm.getImage(), student);
+        }
+        studentService.editStudent(student.getId(), studentEditForm, fileInfo);
+        return "redirect:/student/home/edit";
     }
 }
 
-//    @PostMapping("/student/photo")
-//    public String uploadPhoto(@RequestParam("photo") MultipartFile multipartFile, Model model, Authentication authentication) {
-////        Student student = (Student) authenticationService.getUserModel(authentication);
-////        //проверяем, что файл не пустой
-////        if (!multipartFile.isEmpty()) {
-////            fileService.save(multipartFile, student);
-////        }
-////        model.addAttribute("student", student);
-////        return "student_profile";
-//    }

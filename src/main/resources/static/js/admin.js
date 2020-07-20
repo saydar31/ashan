@@ -3,12 +3,12 @@ function remove() {
 }
 
 function createConfirmButton(id) {
-    let html = '<button id="button_confirm_' + id +  '" onclick="confirmUser('  + "'" + token + "'" + ',' + id + ')">Принять</button>';
+    let html = '<button  class="btn btn-secondary" id="button_confirm_' + id +  '" onclick="confirmUser('  + "'" + token + "'" + ',' + id + ')">Принять</button>';
     return html;
 }
 
 function createRefuseButton(id) {
-    let html = '<button id="button_refuse_' + id +  '" onclick="refuseUser('  + "'" + token + "'" + ',' + id + ')">Отклонить</button>';
+    let html = '<button  class="btn btn-secondary" id="button_refuse_' + id +  '" onclick="refuseUser('  + "'" + token + "'" + ',' + id + ')">Отклонить</button>';
     return html;
 }
 
@@ -21,17 +21,10 @@ function removeButtons(id) {
 function getStudents(response) {
     remove();
     //вывод всех студентов, item - элемент (студент)
-    response.forEach(function (item, i, arr) {
-        var newLi = document.createElement('li')
+    response.forEach(function (item) {
         let link = "/student/" + item.id;
-        let htmlText = '<a href="' + link + '">' + item.surname + ' '+ item.name + '</a>';
-
-        let buttonConfirm = createConfirmButton(item.id);
-        let buttonRefuse = createRefuseButton(item.id);
-        htmlText += buttonConfirm;
-        htmlText += buttonRefuse;
-        newLi.innerHTML = htmlText;
-        $("#users").append(newLi);
+        $("#users").append( '<tr><td><a href="' + link + '">' + item.surname + ' ' + item.name + ' ' + item.patronymic  + '</a></td>' +
+            '<td>'+ item.course + '</td><td>11-' + item.groupNumber + '</td><td>' +  createConfirmButton(item.id) + '</td><td>' + createRefuseButton(item.id) + '</td></tr>');
     })
 }
 
@@ -115,7 +108,6 @@ function getEmployers(response) {
 function getNotConfirmedEmployers(token) {
 
     $.ajax({
-
         type: 'GET',
         url: '/api/admin/not_confirmed_employers',
         contentType: "application/json",

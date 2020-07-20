@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 import ru.itis.ashan.entities.fileInfo.FileInfo;
+import ru.itis.ashan.entities.user.UserDto;
 import ru.itis.ashan.entities.user.UserModel;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -19,14 +20,24 @@ public class FileHelper {
     @Value("${storage.files}")
     private String path;
 
-    public FileInfo convert(MultipartFile file, UserModel user) {
+    public FileInfo convert(MultipartFile file, UserDto user) {
         String fileName = createStorageName(file);
         return FileInfo.builder()
                 .originalFileName(file.getOriginalFilename())
                 .storageFileName(fileName)
                 .size(file.getSize())
                 .type(file.getContentType())
-                .url("http://localhost:8080/files/" + fileName)
+                .createdAt(LocalDate.now())
+                .build();
+    }
+
+    public FileInfo convert(MultipartFile file) {
+        String fileName = createStorageName(file);
+        return FileInfo.builder()
+                .originalFileName(file.getOriginalFilename())
+                .storageFileName(fileName)
+                .size(file.getSize())
+                .type(file.getContentType())
                 .createdAt(LocalDate.now())
                 .build();
     }
@@ -54,6 +65,10 @@ public class FileHelper {
         } catch (IOException e) {
             throw new IllegalArgumentException();
         }
+    }
+
+    public File downloadFile(FileInfo fileInfo){
+        return new File(path + fileInfo.getStorageFileName());
     }
 }
 
