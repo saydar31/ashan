@@ -42,7 +42,6 @@ public class AdminServiceTest {
 
     @Test
     void findAllNotConfirmedStudents() {
-        teacherRepository.save(teacher);
         List<TeacherDto> teacherDtoList = adminService.getAllNotConfirmedTeachers();
         System.out.println(teacherDtoList.size());
     }
