@@ -19,7 +19,6 @@ import ru.itis.ashan.services.SignInRestServiceImpl;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 
-//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK, classes = AshanApplication.class)
 
 @SpringBootTest
 @AutoConfigureMockMvc
