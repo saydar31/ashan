@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <title>Tag Panel</title>
     <script
@@ -28,18 +29,21 @@
     </div>
     <h4><b>Список всех тегов</b></h4>
     <ul>
-        <#if tagList?has_content>
-            <table id="tag_list" class="table table-responsive">
-                <tbody>
+        <table id="tag_list" class="table table-responsive">
+            <tbody>
+            <#if tagList?has_content>
                 <#list tagList as tag>
                     <tr id="tag_${tag.id}">
                         <td>${tag.tagName}</td>
-                        <td> <button class="btn btn-secondary" onclick="deleteTag('${tag.id}')">удалить</button></td>
+                        <td>
+                            <button class="btn btn-secondary" onclick="deleteTag('${tag.id}')">удалить</button>
+                        </td>
                     </tr>
                 </#list>
-                </tbody>
-            </table>
-        </#if>
+            </#if>
+            </tbody>
+        </table>
+
     </ul>
 </div>
 </body>
