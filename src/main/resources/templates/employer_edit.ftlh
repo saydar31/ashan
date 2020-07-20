@@ -100,10 +100,6 @@
                                        value="${employer.companyName}">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlFile1">Загрузить фото:</label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                            </div>
-                            <div class="form-group">
                                 <label for="phoneNumber">Номер телефона:</label>
                                 <input type="text" class="form-control" name="phoneNumber" id="phoneNumber"
                                        value="${employer.phoneNumber}">
