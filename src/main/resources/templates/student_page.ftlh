@@ -52,6 +52,10 @@
                         xhr.setRequestHeader(header, token)
                     }
                 }
+            ).done(
+                function () {
+                    $('#inviteButton').hide();
+                }
             )
         }
     </script>
@@ -118,8 +122,8 @@
                     </tr>
                 </#if>
             </table>
-            <#if role?? && role== "EMPLOYER">
-                <button class="btn btn-secondary" onclick="invite(${student.id})">Пригласить на собеседование</button>
+            <#if role?? && role== "EMPLOYER"&&!student.employerDto??>
+                <button id="inviteButton" class="btn btn-secondary" onclick="invite(${student.id})">Пригласить на собеседование</button>
             </#if>
         </div>
     </div>

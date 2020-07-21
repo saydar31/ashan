@@ -14,16 +14,30 @@
 <#include "include/navbar.ftlh">
 <div class="container-fluid">
     <div class="row">
-        <table>
-            <tr><td>Название компании:</td><td>${employer.companyName}</td></tr>
-            <tr><td>Почта:</td><td>${employer.mail}</td></tr>
-            <tr><td>Номер телефона: </td><td>${employer.phoneNumber}</td></tr>
-            <#if employer.studentDtoSet ??>
-                <#list employer.studentDtoSet as student>
-                    <li><a href="/student/${student.id}">${student.surname} ${student.name} ${student.patronymic} 11-${student.groupNumber}</a></li>
-                </#list>
+        <div class="col-2">
+            <#if employer.mainPhotoId?has_content>
+                <img src="/image/${employer.mainPhotoId}" class="img-thumbnail">
+            <#else>
+                <img src="https://s00.yaplakal.com/pics/userpic/6/2/6/av-363626.png" class="img-thumbnail">
             </#if>
-        </table>
+        </div>
+        <div class="col-3">
+            <table>
+                <tr><td><b>Название компании: </b></td><td>${employer.companyName}</td></tr>
+                <tr><td><b>Почта: </b></td><td>${employer.mail}</td></tr>
+                <tr><td><b>Номер телефона: </b></td><td>${employer.phoneNumber}</td></tr>
+            </table>
+        </div>
+        <div class="col-7">
+            <ol>
+                Студенты, работающие в компании:
+                <#if employer.studentDtoSet ??>
+                    <#list employer.studentDtoSet as student>
+                        <li><a href="/student/${student.id}">${student.surname} ${student.name} ${student.patronymic} 11-${student.groupNumber}</a></li>
+                    </#list>
+                </#if>
+            </ol>
+        </div>
     </div>
 </div>
 
