@@ -43,11 +43,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d63b0bdf-3c1c-4b6f-a8b3-ac4770bd2c23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itis/ashan/controllers/rest/InitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itis/ashan/controllers/rest/InitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itis/ashan/entities/confirmation/AddressConfirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itis/ashan/entities/confirmation/AddressConfirmation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itis/ashan/entities/employer/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itis/ashan/entities/employer/Employer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mail/interviewMail.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mail/interviewMail.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +66,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Algo" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration name="AshanApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -96,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595362006329</updated>
-      <workItem from="1595362010866" duration="1606000" />
+      <workItem from="1595362010866" duration="2397000" />
     </task>
     <servers />
   </component>
@@ -119,5 +124,41 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1595362984059" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1595364411417">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595364411417" />
+    <state width="1493" height="62" key="GridCell.Tab.0.bottom" timestamp="1595364413460">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="62" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595364413460" />
+    <state width="1493" height="62" key="GridCell.Tab.0.center" timestamp="1595364413460">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="62" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595364413460" />
+    <state width="1493" height="62" key="GridCell.Tab.0.left" timestamp="1595364413460">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="62" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595364413460" />
+    <state width="1493" height="62" key="GridCell.Tab.0.right" timestamp="1595364413460">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="62" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595364413460" />
+    <state width="1493" height="62" key="GridCell.Tab.1.bottom" timestamp="1595364413454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="62" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595364413454" />
+    <state width="1493" height="62" key="GridCell.Tab.1.center" timestamp="1595364413453">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="62" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1595364413453" />
+    <state width="1493" height="62" key="GridCell.Tab.1.left" timestamp="1595364413453">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="62" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1595364413453" />
+    <state width="1493" height="62" key="GridCell.Tab.1.right" timestamp="1595364413454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="62" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1595364413454" />
   </component>
 </project>
