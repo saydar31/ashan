@@ -8,7 +8,7 @@ import javax.persistence.*;
 /*
  Аккаунт институт, содержит уникальный институт
  */
-@Data
+
 @SuperBuilder
 @AllArgsConstructor
 @Entity

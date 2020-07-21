@@ -11,11 +11,12 @@ import ru.itis.ashan.entities.user.UserModel;
 import javax.persistence.*;
 import java.util.Set;
 
-@Data
+
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
-@EqualsAndHashCode(exclude = {"students","invitedStudents"},callSuper = false)
+@Getter
+@Setter
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Employer extends UserModel {
