@@ -1,6 +1,9 @@
 package ru.itis.ashan.entities.confirmation;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import ru.itis.ashan.entities.user.UserModel;
 
 import javax.persistence.CascadeType;
@@ -12,7 +15,6 @@ import javax.persistence.OneToOne;
 @Builder
 @Data
 @Entity
-@EqualsAndHashCode(exclude = "userModel")
 public class AddressConfirmation {
     @Id
     private String hash;

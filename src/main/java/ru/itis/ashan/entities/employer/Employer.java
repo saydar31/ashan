@@ -15,7 +15,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
-@EqualsAndHashCode(exclude = {"students","invitedStudents"},callSuper = true)
+@EqualsAndHashCode(exclude = {"students","invitedStudents"},callSuper = false)
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Employer extends UserModel {
