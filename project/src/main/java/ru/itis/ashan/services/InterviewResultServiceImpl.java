@@ -17,9 +17,6 @@ public class InterviewResultServiceImpl implements InterviewResultService {
     @Autowired
     private EmployerRepository employerRepository;
 
-    @Autowired
-    private InterviewNotificationService interviewNotificationService;
-
     @Override
     public void accept(Long studentId, Employer employer) {
         setResults(studentId,employer,true);
