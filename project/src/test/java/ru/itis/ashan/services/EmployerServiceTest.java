@@ -34,7 +34,6 @@ class EmployerServiceTest {
                 .companyName("company")
                 .build();
         Mockito.when(employerRepository.findById(1L)).thenReturn(Optional.of(employer));
-        Mockito.doReturn(Optional.empty()).when(employerRepository).findById(Mockito.anyLong());
     }
 
     @Test
@@ -47,6 +46,7 @@ class EmployerServiceTest {
                 .companyName("company")
                 .build();
         EmployerDto employerDto = EmployerDto.castToDto(employer);
+        assertEquals(employerDto,employerService.getById(1L));
     }
 
     @Test
